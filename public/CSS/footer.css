@@ -1,0 +1,51 @@
+footer
+{
+    background-color: black;
+    margin-bottom: 0;
+}
+footer .contact
+{
+    padding-left: 40px;
+    background-color: black;
+    width: 33%;
+    display: inline-block;
+
+}
+footer .important
+{
+    padding-left: 40px;
+    background-color: black;
+    width:33%;
+    display: inline-block;
+}
+footer .map
+{
+    background-color: black;
+    width: 33%;
+    display: inline-block;
+}
+footer .rights
+{
+    text-align: center;
+    background-color: black;
+    padding-bottom: 5px;
+}
+footer .heading
+{
+    font-size: 110%;
+    color: white;
+    font-family: 'Kodchasan';
+}
+footer p
+{
+    font-size: 100%;
+}
+.x
+{
+    color: black;
+}
+footer a p:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}

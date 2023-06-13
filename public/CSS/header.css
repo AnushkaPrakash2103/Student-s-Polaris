@@ -1,0 +1,33 @@
+.Header
+{
+    padding: 25px 13px;
+}
+
+.Header .logo
+{
+    float: left;
+    font-family: 'Kodchasan';
+    font-size: 128%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.Header .hdrght
+{
+    float: right;
+    font-family: 'Inter';
+}
+.Header .hdrght a
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 128%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.Header .hdrght button:hover
+{
+    font-weight: bold;
+    cursor: pointer;
+}
