@@ -12,16 +12,18 @@
 
     <title>Document</title>
     <link rel="stylesheet" href="CSS/year_style.css" />
+
+    <link rel="stylesheet" href="CSS/header.css"></link>
+        <link rel="stylesheet" href="CSS/footer.css"></link>
 </head>
 
-
-
 <body>
+    <div class = "section1">
+     <%- include('header') -%></div>
+        <!-- INCLUDING HEADER --><hr color="black"><hr color="black">
+    <div class="header1">
 
-   
-    <div class="header">
-
-        <a href="logo" class="logo">IN WHICH YEAR YOU ARE?</a>
+        <a href="logo" class="logo1">IN WHICH YEAR YOU ARE?</a>
 
     </div>
 
@@ -29,7 +31,7 @@
 
 
     <div>
-        <div class="header">
+        <div class="header1">
             <table>
                 <tr>
                     <td> <img src="images/fresh.jpeg" alt="image is not available" width="140px" height="140px" style="max-width:100%;"></td>
@@ -54,7 +56,12 @@
             </table>
           
         </div>
-       
+        <script src="JS/header.js"></script>
 </body>
+<hr color="black">
+<hr color="black">
+<link rel="stylesheet" href="CSS/header.css"></link>
+        <link rel="stylesheet" href="CSS/footer.css"></link>
+<div class="bfooter"><%- include('footer') -%></div>
 
-</html>
+ <!-- INCLUDING FOOTER-->

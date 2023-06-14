@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 
 const ejs = require("ejs");
 const app = express();
-
+app.set('views', __dirname + '/views')
 app.set("view engine", "ejs");
 
 //ejs.pa
@@ -50,7 +50,7 @@ app.post("/header", function(req,res)
         console.log(header);
 });
 
-app.listen(4015, function()
+app.listen(4028, function()
 {
     console.log("Server is running on port 4000");
 });
