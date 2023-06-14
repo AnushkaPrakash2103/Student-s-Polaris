@@ -1,0 +1,136 @@
+* {
+    padding: 15px;
+    margin: 10px;
+}
+
+* {
+    background-color: black;
+}
+
+.header {
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+
+}
+
+.header a.logo {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-style: none;
+    text-decoration: none;
+    font-family: 'Kodchasan';
+    color: white;
+
+
+}
+
+.header a.active {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: 'Kodchasan';
+
+}
+
+.header a.active:hover {
+    font-weight: bolder;
+    color: white;
+}
+
+img {
+    border: solid;
+    border-radius: 100%;
+    border-width: 5%;
+    border-color: #0695C0;
+    padding: 0;
+    margin: 10px;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 80px;
+}
+
+td {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+table {
+    padding-left: 20%;
+    padding-top: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        text-decoration: none;
+        background-color: black;
+        text-align: center;
+
+        font-size: 5px;
+        width: 700px;
+        padding-left: 0px;
+        margin-top: 100px;
+        margin-left: 80px;
+    }
+
+    table {
+        padding-left: 20%;
+        padding-top: 0%;
+
+        padding-left: 0px;
+        margin-left: 5px;
+        width: 830px;
+        height: 915px;
+    }
+
+    img {
+        border: solid;
+        border-radius: 100%;
+        border-width: 5%;
+        border-color: #0695C0;
+        padding: 0;
+        margin: 10px;
+        margin-top: 50px;
+        margin-right: 100px;
+       
+        width: 220px;
+        height: 220px;
+        margin-left: 40px;
+    }
+    td{
+        
+    width: 400px;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+   
+    padding-right: 40px;
+    margin-left: 0px;
+    padding-left: 0px;
+    }
+    .header a.active {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-family: 'Kodchasan';
+       font-size: 30px;
+    }
+    .header a.active:hover {
+        font-weight: bolder;
+        color: white;
+    }
+    .header a.logo {
+        font-size: 60px;
+        font-weight: bold;
+        text-align: center;
+        font-style: none;
+        text-decoration: none;
+        font-family: 'Kodchasan';
+        color: white;
+    
+    
+    }
+}
