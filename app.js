@@ -1,10 +1,13 @@
+
 const express = require("express");
 const bodyParser = require("body-parser");
 
+const ejs = require("ejs");
 const app = express();
-
+app.set('views', __dirname + '/views')
 app.set("view engine", "ejs");
 
+//ejs.pa
 app.use(bodyParser.urlencoded({extended: true})); //to enable use of body parser
 app.use(express.static("public"));
 
@@ -18,13 +21,28 @@ app.get("/",function(req,res)
 {
     res.render("homepage");
 });
+app.get("/year",function(req,res)
+{
+    res.render("index_year");
+});
 app.post("/", function(req,res)
 {
     hmpgInput = req.body.homeInput;
-    console.log(hmpgInput);
+    if(hmpgInput=="1")
+        res.redirect("/year");
+    else if(hmpgInput=="2")
+        console.log(hmpgInput);
+    else
+        console.log(hmpgInput);
 });
 
-//post request for header
+
+
+//get and post request for year
+
+app.post("/year", function(res,req){
+    //handle post request
+});
 app.post("/header", function(req,res)
 {
     let header = req.body.header;
@@ -36,5 +54,7 @@ app.post("/header", function(req,res)
 
 app.listen(3000, function()
 {
-    console.log("Server is running on port 3000");
+    console.log("Server is running on port 3000");
 });
+
+
