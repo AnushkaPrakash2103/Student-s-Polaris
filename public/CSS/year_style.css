@@ -4,20 +4,19 @@
 }
 
 * {
-    background-color: black;
+    background-color: #00041C;
 }
 
 .section1{
     height: 20%;
     background-color: #00041C;
     margin: -1%;
-    padding: bottom 15%;
-    background-size: cover;
-    margin : 10px; 
+    padding-bottom: 15%;
+    
 }
 
 
-a button
+ button
 {
     font-family: 'Kodchasan';
     font-size:  100%;
@@ -26,18 +25,23 @@ a button
     border: none;
     padding: 0px 0px;
     height: 0px;
+    text-decoration: none;
+    
+    text-align: center;
+   
 }
-a button:hover
+ button:hover
 {
     font-weight: bold;
+    
+    color: white;
 }
 
 .bfooter {
-    background-color: #00041C;
+    background-color: black;
     background-size: cover;
     margin: -1%;
-    color: white;
-    margin-top: 100px;
+    
 }
 
 .x {
@@ -61,24 +65,11 @@ a button:hover
     text-decoration: none;
     font-family: 'Kodchasan';
     color: white;
-    position: relative;
-    top: 80px;
-    margin-left: -40px;
+    
+    
+    margin-left: 65px;
+    
 }
-
-.header1 a.active {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    font-family: 'Kodchasan';
-
-}
-
-.header1 a.active:hover {
-    font-weight: bolder;
-    color: white;
-}
-
 img {
     border: solid;
     border-radius: 100%;
@@ -95,7 +86,7 @@ td {
     padding-top: 5px;
     padding-bottom: 20px;
     padding-left: 30px;
-    padding-right: 40px;
+    padding-right: 170px;
 }
 
 table {
