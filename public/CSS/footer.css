@@ -22,7 +22,6 @@ footer .important
 footer .map
 {
     background-color: black;
-    
     display: inline-block;
 }
 footer .rights
@@ -54,7 +53,6 @@ footer a
 {
     text-decoration: none;
 }
-
 @media screen and (max-width: 768px)
 {
     footer
@@ -115,7 +113,7 @@ footer a
     }
     footer a
     {
-        text-decoration: none;
-    }
+        text-decoration: none;
+}
 
 }

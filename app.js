@@ -1,4 +1,3 @@
-
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -35,7 +34,8 @@ app.post("/", function(req,res)
 
 
 //get and post request for year
-app.get("/year", function(req,res){
+app.get("/year",function(req,res)
+{
     res.render("index_year");
 });
 app.post("/year", function(res,req){
@@ -50,9 +50,7 @@ app.post("/header", function(req,res)
         console.log(header);
 });
 
-app.listen(4028, function()
+app.listen(3000, function()
 {
-    console.log("Server is running on port 4000");
+    console.log("Server is running on port 3000");
 });
-
-
