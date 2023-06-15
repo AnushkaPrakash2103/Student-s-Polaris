@@ -39,6 +39,9 @@
 {
     display: none;
 }
+
+
+
 @media screen and (max-width: 768px) 
 {
     .hdrght a {display: none;}
@@ -79,6 +82,6 @@
     }
     .Header .responsive .icon 
     {
-        display: none;
-}
+        display: none;
+    }
 }

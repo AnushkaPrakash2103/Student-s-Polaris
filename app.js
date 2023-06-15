@@ -1,12 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
-const ejs = require("ejs");
 const app = express();
-app.set('views', __dirname + '/views')
+
 app.set("view engine", "ejs");
 
-//ejs.pa
 app.use(bodyParser.urlencoded({extended: true})); //to enable use of body parser
 app.use(express.static("public"));
 
@@ -23,24 +21,10 @@ app.get("/",function(req,res)
 app.post("/", function(req,res)
 {
     hmpgInput = req.body.homeInput;
-    if(hmpgInput=="1")
-        res.redirect("/year");
-    else if(hmpgInput=="2")
-        console.log(hmpgInput);
-    else
-        console.log(hmpgInput);
+    console.log(hmpgInput);
 });
 
-
-
-//get and post request for year
-app.get("/year",function(req,res)
-{
-    res.render("index_year");
-});
-app.post("/year", function(res,req){
-    //handle post request
-});
+//post request for header
 app.post("/header", function(req,res)
 {
     let header = req.body.header;
