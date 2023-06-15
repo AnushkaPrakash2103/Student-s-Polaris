@@ -21,7 +21,7 @@
     font-family: 'Kodchasan';
     font-size:  100%;
     color: white;
-    background-color: #040624;
+    background-color: #00041C;
     border: none;
     padding: 0px 0px;
     height: 0px;
@@ -50,7 +50,7 @@
 
 .header1 {
     text-decoration: none;
-    background-color: black;
+    background-color: #00041C;
     text-align: center;
     padding: 7px;
     margin: 100px;
@@ -65,7 +65,7 @@
     text-decoration: none;
     font-family: 'Kodchasan';
     color: white;
-    
+    background-color: #00041C;
     
     margin-left: 65px;
     
@@ -92,12 +92,13 @@ td {
 table {
     padding-left: 20%;
     padding-top: 0%;
+    border-color: #00041C;
 }
 
 @media screen and (max-width: 768px) {
     .header1 {
         text-decoration: none;
-        background-color: black;
+        background-color: #00041C;
         text-align: center;
 
         font-size: 5px;
