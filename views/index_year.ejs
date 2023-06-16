@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.postimg.cc/br1H7MKF/favicon-2.png"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kodchasan:wght@200&display=swap" rel="stylesheet">
+
+    <title>Year</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/year_style.css" />
+
+    <link rel="stylesheet" href="CSS/header.css"></link>
+    <link rel="stylesheet" href="CSS/footer.css"></link>
+</head>
+
+<body>
+    <div class="yearcontainer_header">
+        <%- include("header") -%>
+    </div>
+    <div>
+        <form class="yearcontainer" action="/year" method="post">
+            <div class="head_line">In Which Year You are?</div>
+            <div class="rowy1">
+                <div class="columny">
+                    <img src="/images/fresh.jpeg" alt="FRESHMAN" width="140px" height="140px" class="imgy1">
+                    <p class="text_1"><button type="submit" name="year" value="1">FRESHMAN YEAR</button></p>
+                </div>
+                <div class="columny">
+                    <img src="/images/soph.jpeg" alt="SOPHOMORE" width="140px" height="146px" class="imgy2">
+                    <p class="text_2"><button type="submit" name="year" value="2">SOPHOMORE YEAR</button></p>
+                </div>
+            </div>
+            <div class="rowy2">
+                <div class="columny">
+                    <img src="/images/junior.jpeg" alt="JUNIOR" width="140px" height="140px" class="imgy3">
+                    <p class="text_3"><button type="submit" name="year" value="3">JUNIOR YEAR</button></p>
+                </div>
+                <div class="columny">
+                    <img src="/images/senior.jpeg" alt="SENIOR" width="140px" height="140px" class="imgy4">
+                    <p class="text_4"><button type="submit" name="year" value="4">SENIOR YEAR</button></p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="JS/header.js"></script>
+</body>
+
+<%- include("footer") -%> 
+</html>
+
