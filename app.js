@@ -1,60 +1,85 @@
-
 const express = require("express");
 const bodyParser = require("body-parser");
 
-const ejs = require("ejs");
 const app = express();
-app.set('views', __dirname + '/views')
 app.set("view engine", "ejs");
-
-//ejs.pa
-app.use(bodyParser.urlencoded({extended: true})); //to enable use of body parser
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-var hmpgInput="";
-var year="";
-var semester="";
-var branch="";
-
-//get and post request for home route
-app.get("/",function(req,res)
-{
-    res.render("homepage");
-});
-app.get("/year",function(req,res)
-{
-    res.render("index_year");
-});
-app.post("/", function(req,res)
-{
-    hmpgInput = req.body.homeInput;
-    if(hmpgInput=="1")
-        res.redirect("/year");
-    else if(hmpgInput=="2")
-        console.log(hmpgInput);
-    else
-        console.log(hmpgInput);
+app.get("/", (req, res) => {
+  res.render("homepage");
 });
 
-
-
-//get and post request for year
-
-app.post("/year", function(res,req){
-    //handle post request
-});
-app.post("/header", function(req,res)
-{
-    let header = req.body.header;
-    if(header==="1")
-        res.redirect("/");
-    else
-        console.log(header);
+app.get("/year", (req, res) => {
+  res.render("index_year");
 });
 
-app.listen(3000, function()
-{
-    console.log("Server is running on port 3000");
+app.get("/semester", (req, res) => {
+  const year = req.query.year;
+  let semesterOne, semesterTwo, semesterOneImage, semesterTwoImage;
+
+  if (year === "1") {
+    semesterOne = "Semester One";
+    semesterTwo = "Semester Two";
+    semesterOneImage = "number-1.png";
+    semesterTwoImage = "number-2.png";
+  } else if (year === "2") {
+    semesterOne = "Semester Three";
+    semesterTwo = "Semester Four";
+    semesterOneImage = "number-3.png";
+    semesterTwoImage = "number-4.png";
+  } else if (year === "3") {
+    semesterOne = "Semester Five";
+    semesterTwo = "Semester Six";
+    semesterOneImage = "number-5.png";
+    semesterTwoImage = "number-6.png";
+  } else if (year === "4") {
+    semesterOne = "Semester Seven";
+    semesterTwo = "Semester Eight";
+    semesterOneImage = "number-7.png";
+    semesterTwoImage = "number-8.png";
+  } else {
+    return res.send("Invalid year selection");
+  }
+
+  res.render("index_sem", {
+    year,
+    semesterOne,
+    semesterTwo,
+    semesterOneImage,
+    semesterTwoImage,
+  });
 });
+
+app.post("/", (req, res) => {
+  const hmpgInput = req.body.homeInput;
+  if (hmpgInput === "1") {
+    res.redirect("/year");
+  } else if (hmpgInput === "2") {
+    // Handle other options if needed
+  } else {
+    // Handle other options if needed
+  }
+});
+
+app.post("/year", (req, res) => {
+  const selectedYear = req.body.year;
+  res.redirect(`/semester?year=${selectedYear}`);
+});
+
+app.post("/header", (req, res) => {
+  const header = req.body.header;
+  if (header === "1") {
+    res.redirect("/");
+  } else {
+    console.log(header);
+  }
+});
+
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
+});
+
+
 
 

@@ -19,37 +19,38 @@
 </head>
 
 <body>
-    <div class = "yearcontainer_header">
-     <%- include("header") -%></div>
+    <div class="yearcontainer_header">
+        <%- include("header") -%>
+    </div>
     <div>
         <form class="yearcontainer" action="/year" method="post">
-                <div class="head_line">In Which Year You are?</div>
-                <div class="rowy1">
-                     <div class="columny">
-                        <img src="/images/fresh.jpeg" alt="FRESHMAN" width="140px" height="140px" class="imgy1">
-                        <p class="text_1"><button type="submit" name="yearInput" value="1">FRESHMAN YEAR</button></p>
-                     </div>
-                     <div class="columny">
-                        <img src="/images/soph.jpeg" alt="SOPHOMORE" width="140px" height="146px" class="imgy2">
-                        <p class="text_2"><button type="submit" name="yearInput" value="2">SOPHOMORE YEAR</button></p>
-                     </div>
+            <div class="head_line">In Which Year You are?</div>
+            <div class="rowy1">
+                <div class="columny">
+                    <img src="/images/fresh.jpeg" alt="FRESHMAN" width="140px" height="140px" class="imgy1">
+                    <p class="text_1"><button type="submit" name="year" value="1">FRESHMAN YEAR</button></p>
                 </div>
-                <div class="rowy2">
-                    <div class="columny">
-                       <img src="/images/junior.jpeg" alt="JUNIOR" width="140px" height="140px" class="imgy3">
-                       <p class="text_3"><button type="submit" name="yearInput" value="3">JUNIOR YEAR</button></p>
-                    </div>
-                    <div class="columny">
-                       <img src="/images/senior.jpeg" alt="chemical" width="140px" height="140px" class="imgy4">
-                       <p class="text_4"><button type="submit" name="homeInput" value="4">SENIOR YEAR</button></p>
-                    </div>
-               </div>    
-    </form>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="JS/header.js"></script>
+                <div class="columny">
+                    <img src="/images/soph.jpeg" alt="SOPHOMORE" width="140px" height="146px" class="imgy2">
+                    <p class="text_2"><button type="submit" name="year" value="2">SOPHOMORE YEAR</button></p>
+                </div>
+            </div>
+            <div class="rowy2">
+                <div class="columny">
+                    <img src="/images/junior.jpeg" alt="JUNIOR" width="140px" height="140px" class="imgy3">
+                    <p class="text_3"><button type="submit" name="year" value="3">JUNIOR YEAR</button></p>
+                </div>
+                <div class="columny">
+                    <img src="/images/senior.jpeg" alt="SENIOR" width="140px" height="140px" class="imgy4">
+                    <p class="text_4"><button type="submit" name="year" value="4">SENIOR YEAR</button></p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="JS/header.js"></script>
 </body>
 
-    <%- include("footer") -%> 
+<%- include("footer") -%> 
+</html>
 
-<!-- INCLUDING FOOTER-->
