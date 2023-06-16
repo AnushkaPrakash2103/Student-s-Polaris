@@ -8,39 +8,9 @@ body
     height: 100%;
     background-image: url("https://images.pexels.com/photos/813269/pexels-photo-813269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-size: cover;
-}
-.Header
-{
-    padding: 25px 13px;
+    box-shadow: 0 2px 2px 0 rgba(167, 187, 255, 0.2), 0 6px 20px 0 rgba(152, 212, 255, 0.19);
 }
 
-.logo
-{
-    float: left;
-    font-family: 'Kodchasan';
-    font-size: 128%;
-    font-weight: bold;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.hdrght
-{
-    float: right;
-    font-family: 'Inter';
-}
-.hdrght a
-{
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 128%;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-.hdrght a:hover
-{
-    font-weight: bold;
-}
 
 .title
 {
@@ -55,6 +25,7 @@ body
 {
     display: inline-block;
     position: relative;
+    
 }
 .title1
 {
@@ -90,7 +61,6 @@ p
     line-height: 6;
     color: white;
     padding-bottom: 25px;
-
 }
 .image1
 {
@@ -99,7 +69,9 @@ p
     border-radius: 100%;
     border-style: solid;
     border-color: #069FC0;
+    border-width: 2px;
     margin: 0 30px 0 0;
+    box-shadow: 0 6px 12px 0 rgba(167, 187, 255, 0.2), 0 6px 20px 0 rgba(152, 212, 255, 0.19);
 }
 .image2
 {
@@ -108,17 +80,25 @@ p
     border-radius: 100%;
     border-style: solid;
     border-color: #069FC0;
+    border-width: 2px;
     margin: 0 0 0 30px;
+    box-shadow: 0 6px 12px 0 rgba(167, 187, 255, 0.2), 0 6px 20px 0 rgba(152, 212, 255, 0.19);
 }
 .p2
 {
     text-align: right;
 }
-a
+button
 {
-    text-decoration: none;
+    font-family: 'Kodchasan';
+    font-size:  100%;
+    color: white;
+    background-color: #040624;
+    border: none;
+    padding: 0px 0px;
+    height: 0px;
 }
-a:hover
+button:hover
 {
     font-weight: bold;
 }
@@ -129,52 +109,7 @@ a:hover
 
 
 
-.footer
-{
-    background-color: black;
-    margin-bottom: 0;
-}
-.contact
-{
-    padding-left: 40px;
-    background-color: black;
-    width: 33%;
-    display: inline-block;
 
-}
-.important
-{
-    padding-left: 40px;
-    background-color: black;
-    width:33%;
-    display: inline-block;
-}
-.map
-{
-    background-color: black;
-    width: 33%;
-    display: inline-block;
-}
-.rights
-{
-    text-align: center;
-    background-color: black;
-    padding-bottom: 5px;
-}
-.heading
-{
-    font-size: 110%;
-    color: white;
-    font-family: 'Kodchasan';
-}
-.footer p
-{
-    font-size: 100%;
-}
-.x
-{
-    color: black;
-}
 
 @media screen and (max-width: 768px){
     .section1
@@ -229,6 +164,6 @@ a:hover
     }
     .hdrght a:hover
     {
-        font-weight: bold;
-    }
+        font-weight: bold;
+}
 }
