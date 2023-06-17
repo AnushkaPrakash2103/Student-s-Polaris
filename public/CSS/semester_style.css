@@ -2,6 +2,7 @@ body {
   background-color: #00041C;
   font-family: Kodchasan;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -40,18 +41,21 @@ a button {
 a button:hover {
   font-weight: bold;
 }
-.sem
+.button-btn
 {
   position: relative;
   top: 100px;
   right: 17%;
+  
   text-decoration: none;
   font-family: Kodchasan;
   font-size: 25px;
+  border: none;
   text-transform: uppercase;
   color: rgb(223, 232, 215);
+  background-color: #00041C;
 }
-.sem:hover
+.button-btn:hover
 {
   font-weight: bold;
 }
@@ -66,14 +70,14 @@ a button:hover {
 
 .semestercontainer {
   background-color: #00041C;
-
+  /* margin: -1.5%; */
   padding: 0%;
 }
 footer .map {
 padding-top: 2%;
 }
 footer h4 {
-padding-bottom: 2%;
+padding-bottom: 3%;
 font-weight: bold;
 }
 
@@ -81,7 +85,7 @@ footer p {
 color: white;
 font-family: 'Kodchasan';
 padding-bottom: 1%;
-} 
+}
 
 
 .ex1 {
@@ -123,7 +127,7 @@ img.column1
   padding: 100px 0 0 0;
   margin-bottom: 200px;
 }
-.sem
+.button-btn
 {
   position: static;
   text-decoration: none;
@@ -131,9 +135,12 @@ img.column1
   font-size: 25px;
   color: rgb(223, 232, 215);
   display: block;
-  padding: 75px 0 150px 0;
+  border: none;
+  margin-left: 38%;
+  padding: 30px 0 40px 0;
+  background-color: #00041C;
 }
-.button-btn :hover
+.button-btn:hover
 {
   font-weight: bold;
 }
@@ -158,9 +165,7 @@ color: white;
 font-family: 'Kodchasan';
 padding-bottom: 2%;
 }
-
-
-
+ 
  
    
    
