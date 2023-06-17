@@ -27,11 +27,11 @@
     <div class="rowx1">
       <div class="columnx1">
         <img class="column1" id="semesterOneImage" src="" alt="One">
-        <button onclick="location.href='/semester?year=<%= year %>&semester=1'" class="button-btn">Semester One</button>
+        <button name="sem" onclick="location.href='/semester?year=<%= year %>&semester=1'" class="button-btn"><%= semesterOne %></button>
       </div>
       <div class="columnx1">
         <img class="column1" id="semesterTwoImage" src="" alt="Two">
-        <button onclick="location.href='/semester?year=<%= year %>&semester=2'" class="button-btn">Semester Two</button>
+        <button name="sem" onclick="location.href='/semester?year=<%= year %>&semester=2'" class="button-btn"><%= semesterTwo %></button>
       </div>
     </div>
   </form>
@@ -65,6 +65,14 @@
  <%- include("footer") -%>
 </div>
 
+
+
+
+
+
+
+
+  
 
 
 
