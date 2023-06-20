@@ -112,9 +112,7 @@ img.column1
   height: 225px;
   border-style: solid;
   border-radius: 100%;
-  border-color: aqua;
-  display: block;
-  text-align: center;
+  border: solid #069FC0 2px;
 }
 .columnx1
 {

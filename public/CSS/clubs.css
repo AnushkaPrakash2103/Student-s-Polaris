@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Kodchasan;
+}
+.club_header{
+    height: 20%;
+    background-color: #00041C;
+    margin: -1%;
+    padding-bottom: 15%;
+}
+.clubcontainer{
+    background-color: #00041C;
+    margin: -1.5%;
+    /* padding-bottom: 15%; */
+    /* margin-bottom: 10%; */
+ }
+ .cfooter{
+    margin-top: 10%;
+ }
+ .club_headline1{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size:  250%;
+    color: white;
+    margin-bottom: 80px;
+    padding-top: 1%;
+    padding-bottom: 8%;
+ }
+ .club_headline1:hover{
+    font-weight: bold;
+ }
+ .club_headline2{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size:  250%;
+  color: white;
+  margin-bottom: 80px;
+  padding-top: 10%;
+  padding-bottom: 8%;
+}
+.club_headline2:hover{
+  font-weight: bold;
+}
+ a button
+{
+    font-family: 'Kodchasan';
+    font-size:  100%;
+    color: white;
+    background-color: #00041C;
+    border: none;
+    padding: 0px 0px;
+    height: 0px;
+}
+a button:hover
+{
+    font-weight: bold;
+} .img_left{
+    width: 13%;
+    float: left;
+    border-radius: 100%;
+    border: solid #069FC0 2px;
+    margin-left: 6%;
+    box-shadow: 0 6px 12px 0 rgba(167, 187, 255, 0.2), 0 6px 20px 0 rgba(152, 212, 255, 0.19);
+}
+.container_left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5%;
+  }
+  .left {
+    margin-top: 3%; 
+    padding-left: 10%;
+    font-size: 180%;
+
+  }
+  .left:hover{
+    font-weight: bold;
+  }
+  .left_description {
+    margin: 0 10%;
+    text-align: justify;
+    font-size: 100%;
+  }
+
+.container_right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5%;
+  }
+  
+  .img_right {
+     /* order: 2;   */
+    width: 13.5%;
+    float: right;
+    border-radius: 100%;
+    border: solid #069FC0 2px;
+    margin-left: 6%;
+    margin-right: 6%;
+    box-shadow: 0 6px 12px 0 rgba(167, 187, 255, 0.2), 0 6px 20px 0 rgba(152, 212, 255, 0.19);
+  } 
+  .right {
+    margin-top: 5%; 
+    margin-left: 80%;
+    font-size: 180%;
+
+  }
+  .right:hover{
+    font-weight: bold;
+  }
+  .right_description {
+    margin-left: 15%; 
+    font-size: 100%;
+    margin-top: -1%;
+    text-align: justify;
+  } 
+.right_spark{
+    margin-top: 5%; 
+    margin-left: 70%;
+    font-size: 180%;
+}
+.right_spark:hover{
+    font-weight: bold;
+  }
+  /* .f1 p,
+  .f1 a {
+    display: inline-block;
+    /* margin-top: 5%; */
+  /* }
+  .instagram-icon{
+    background: radial-gradient(circle at 27% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    border-radius: 24%;
+    width: 22px;
+    height: 22px;
+    margin: 3%;
+  }  */
+  .f1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .f1 p.left {
+    margin-right: 10px;
+  }
+
+
+  .instagram-icon{
+    background: radial-gradient(circle at 27% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    border-radius: 24%;
+    width: 22px;
+    height: 22px;
+    margin-left: 3%;
+  }
+  .instagram-icon2{
+    background: radial-gradient(circle at 27% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    border-radius: 24%;
+    width: 22px;
+    height: 22px;
+    /* margin-left: 3%; */
+  }
+  .f1 .facebook-icon{
+    margin-left: 20px;
+  }
+  .f1 .linkedin-icon{
+    margin-left: 30px;
+
+  }
+  .instagram-icon1{
+    background: radial-gradient(circle at 27% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    border-radius: 24%;
+    width: 22px;
+    height: 22px;
+    /* margin-left: 3%; */
+  }
+  .f2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .icons {
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  .f2 a {
+    margin-left: 10px;
+  }
+  
+  .f2 p {
+    padding-left: 30px;
+    margin: 10px 10px 10px 0;
+  }
+  .f2 .facebook-icon1{
+    margin-right: 30px; 
+    /* margin-top: 22px; */
+  }
+  .f2 .linkedin-icon1{
+    margin-right: 30px;
+
+  }
+  .f3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .f3 a{
+    margin-left: 10px;
+  }
+  .f3 p{
+    padding-left: 30px;
+    margin: 10px 10px 10px 0;
+  }
+  .f3 .facebook-icon1{
+    margin-right: 30px; 
+    /* margin-top: 22px; */
+  }
+  .f3 .linkedin-icon1{
+    margin-right: 30px;
+
+  }
+  .f4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .f4 a{
+    margin-left: 10px;
+  }
+  .f4 p{
+    padding-left: 30px;
+    margin: 10px 10px 10px 0;
+  }
+  .f4 .facebook-icon1{
+    margin-right: 30px; 
+    /* margin-top: 22px; */
+  }
+  .f4 .linkedin-icon1{
+    margin-right: 30px;
+
+  }
+  @media (max-width: 768px) {
+    .left_description {
+      margin-left: 10%;
+      text-align: justify;
+      font-size: 100%;
+      white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis (...) for truncated text */
+  max-width: 100%; /* Limit the width of the <p> element */
+    }
+    .f2 {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .icons {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .f2 a{
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  
+    .f2 p {
+      margin-right: 0;
+    }
+    .f3 {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .f3 a{
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  
+    .f3 p {
+      margin-right: 0;
+    }
+    .f4 {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .f4 a{
+      margin-left: 0;
+      margin-right:5px;
+    }
+  
+    .f4 p {
+      margin-right: 0;
+    }
+
+    .f2 a{
+      /* margin-right: -680px;  */
+      padding-left: 1000px;
+      margin-top: 22px;
+      position: absolute; 
+    }
+    p {
+      font-size: 14px;
+      padding: 8px;
+    }
+
+       footer .map {
+          padding-top: 2%;
+      }
+  
+      footer h4 {
+          padding-bottom: 5%;
+          font-size: 20%;
+      }
+  
+      footer p {
+          padding-bottom: 10%;
+          font-size: 30%;
+      }
+  }
+  
+  
