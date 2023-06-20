@@ -1,0 +1,77 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width , initial-scale = 1.0 ">
+        <title>Department</title>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="icon" href="https://i.postimg.cc/br1H7MKF/favicon-2.png"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kodchasan:wght@200&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/CSS/branch.css"></link>
+        <link rel="stylesheet" href="/CSS/header.css"></link>
+        <link rel="stylesheet" href="/CSS/footer.css"></link>
+    </head>
+    <body>
+        <!-- <div class="branchSection"> -->
+       <!-- </div> -->
+       <div class="branchcontainer_header">
+       <%- include("header") -%>
+      </div>
+       <div class="branchcontainer">
+            <div class="headline">Choose Your department</div>
+            <form class="branchcontanier2" action="/branch" method="post">
+            <div class="rowb1">
+                 <div class="columnb">
+                    <img src="/images/BranchImages/AI.jpeg" alt="AI" width="174px" height="150px" class="img1">
+                    <p class="text"><button type="submit" name="branchInput" value="1"><div class="linktext">Artificial Intelligence</div></button></p>
+                 </div>
+                 <div class="columnb">
+                    <img src="/images/BranchImages/chemical.png" alt="chemical" width="174px" height="146.81px" class="img2">
+                    <p class="text"><button type="submit" name="branchInput" value="2"><div class="linktext">Chemical Engineering</div></button></p>
+                 </div>
+                 <div class="columnb">
+                    <img src="/images/BranchImages/civil.jpeg" alt="civil" width="174px" height="152px" class="img3">
+                    <p class="text1"><button type="submit" name="branchInput" value="3"><div class="linktext">Civil Engineering</div></button></p>
+                 </div>
+            </div>
+            <div class="rowb2">
+                <div class="columnb">
+                   <img src="/images/BranchImages/cse.jpeg" alt="cse" width="174px" height="151.05px" class="img4">
+                   <p class="text2"><button type="submit" name="branchInput" value="4"><div class="linktext">Computer Science<div class="text2part">Engineering</div></div></button></p>
+                </div>
+                <div class="columnb">
+                   <img src="/images/BranchImages/electrical.jpeg" alt="chemical" width="174px" height="154.97px" class="img5">
+                   <p class="text"><button type="submit" name="branchInput" value="5"><div class="linktext">Electrical Engineering</div></button></p>
+                </div>
+                <div class="columnb">
+                   <img src="/images/BranchImages/mechanical.png" alt="mechanical" width="174px" height="160.83px" class="img6">
+                   <p class="text3"><button type="submit" name="branchInput" value="6"><div class="linktext">Mechanical Engineering</div></button></p>
+                </div>
+           </div>
+           <div class="rowb3">
+            <div class="columnb">
+               <img src="/images/BranchImages/metallurgy.jpeg" alt="metallurgy" width="174px" height="152px" class="img7">
+               <p class="text4"><button type="submit" name="branchInput" value="7"><div class="linktext">Metallurgical</div></button></p>
+            </div>
+            <div class="columnb">
+               <img src="/images/BranchImages/mnc.jpeg" alt="mnc" width="174px" height="146.81px" class="img8">
+               <p class="text5"><button type="submit" name="branchInput" value="8"><div class="linktext">Mathematics and <div class=text5part>Computing</div></div></button></p>
+            </div>
+            <div class="columnb">
+               <img src="/images/BranchImages/ph.jpeg" alt="civil" width="174px" height="147px" class="img9">
+               <p class="text6"><button type="submit" name="branchInput" value="9"><div class="linktext">Engineering Physics</div></button></p>
+            </div>
+       </div>         
+</form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="JS/header.js"></script>
+    </body>
+ <div class="branchfooter">
+   <%- include("footer") -%>
+ </div>
+ </html>
