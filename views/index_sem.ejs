@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://i.postimg.cc/br1H7MKF/favicon-2.png"></link>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kodchasan:wght@200&display=swap" rel="stylesheet">
+
+  <title>Semester Page</title>
+
+  <link rel="stylesheet" href="./CSS/semester_style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/header.css"></link>
+  <link rel="stylesheet" href="CSS/footer.css"></link>
+</head>
+
+<body>
+  <div class="semestercontainer_header">
+    <%- include("header") %>
+  </div>
+  <form class="semestercontainer" action="/semester" method="post">
+    <h2 class="ex1">CHOOSE YOUR SEMESTER</h2>
+    <div class="rowx1">
+      <figure class="columnx1">
+        <p><img class="column1" id="semesterOneImage" src="" alt="One">
+        <figcaption><button  type="submit" name="sem" onclick="location.href='/semester?year=<%= year %>&semester=1'" value="1" class="button-btn"><%= semesterOne %></button></figcaption>
+      </figure>
+      <figure class="columnx1 right">
+        <p><img class="column1" id="semesterTwoImage" src="" alt="Two">
+        <figcaption><button type="submit" name="sem" onclick="location.href='/semester?year=<%= year %>&semester=2'" value="2" class="button-btn"><%= semesterTwo %></button></figcaption>
+      </figure>
+    </div>
+  </form>
+
+  <script>
+    // Function to update the semester images based on the selected year
+    function updateSemesterImages(year) {
+      if (year === "1") {
+        document.getElementById("semesterOneImage").src = "./images/number-1.png";
+        document.getElementById("semesterTwoImage").src = "./images/number-2.png";
+      } else if (year === "2") {
+        document.getElementById("semesterOneImage").src = "./images/number-3.png";
+        document.getElementById("semesterTwoImage").src = "./images/number-4.png";
+      } else if (year === "3") {
+        document.getElementById("semesterOneImage").src = "./images/number-5.png";
+        document.getElementById("semesterTwoImage").src = "./images/number-6.png";
+      } else if (year === "4") {
+        document.getElementById("semesterOneImage").src = "./images/number-7.png";
+        document.getElementById("semesterTwoImage").src = "./images/number-8.png";
+      }
+    }
+
+    // Retrieve the selected year value
+    const selectedYear = "<%= year %>";
+    updateSemesterImages(selectedYear);
+  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="JS/header.js"></script>
+</body>
+<div class="semfooter">
+ <%- include("footer") -%>
+</div>
+
+
+
+
+
+
+
+
+  
+
+
+
+

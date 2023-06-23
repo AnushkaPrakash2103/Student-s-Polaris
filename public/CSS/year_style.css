@@ -1,0 +1,203 @@
+* {
+    padding: -10px;
+    margin: 0px;
+    font-family: Kodchasan;
+}
+
+.head_line {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 250%;
+    color: white;
+    margin-bottom: 80px;
+    padding-top: 2%;
+    /* padding-bottom: 10%; */
+}
+
+.head_line:hover {
+    font-weight: bold;
+}
+
+.yearcontainer_header {
+    height: 20%;
+    background-color: #00041C;
+    /* margin: -1%; */
+    padding-bottom: 15%;
+}
+
+.yearcontainer {
+    background-color: #00041C;
+    /* margin: -1.5%; */
+    padding-bottom: 10%;
+}
+
+p {
+    font-family: 'Kodchasan';
+    font-size: 250%;
+    color: white;
+}
+
+
+a button {
+    font-family: 'Kodchasan';
+    font-size: 100%;
+    color: white;
+    background-color: #040624;
+    border: none;
+    padding: 0px 0px;
+    height: 0px;
+}
+
+a button:hover {
+    font-weight: bold;
+}
+
+button {
+    font-family: 'Kodchasan';
+    font-size: 70%;
+    color: white;
+    background-color: #00041C;
+    border: none;
+    padding: 0px 0px;
+    height: 0px;
+}
+
+button:hover {
+    font-weight: bold;
+}
+
+.imgy1 {
+    margin-left: 6%;
+    border-radius: 71px;
+    border: solid #069FC0 2px;
+}
+
+.imgy2 {
+    margin-left: 6%;
+    border-radius: 71px;
+    border: solid #069FC0 2px;
+}
+
+.imgy3 {
+    margin-left: 6%;
+    border-radius: 71px;
+    border: solid #069FC0 2px;
+}
+
+.imgy4 {
+    margin-left: 6%;
+    border-radius: 71px;
+    border: solid #069FC0 2px;
+}
+
+.text_1 {
+    padding-top: 3%;
+}
+
+.text_2 {
+    padding-top: 3%;
+}
+
+.text_3 {
+    padding-top: 3%;
+}
+
+.text_4 {
+    padding-top: 3%;
+}
+
+.columny {
+    float: left;
+    width: 33.33%;
+    padding-left: 15%;
+    /* padding-right: 3%; */
+    height: 50%;
+}
+
+.rowy1:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding-bottom: 8%;
+}
+
+.rowy2:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding-bottom: 8%;
+}
+
+
+footer .map {
+    padding-top: 2%;
+}
+
+footer h4 {
+    padding-bottom: 3%;
+    font-weight: bold;
+}
+
+footer p {
+    color: white;
+    font-family: 'Kodchasan';
+    padding-bottom: 2%;
+}
+
+@media screen and (max-width: 800px) {
+    .head_line {
+        font-size: 150%;
+        padding-top: 20%;
+        margin-bottom: 50px;
+    }
+
+    .yearcontainer {
+        padding-bottom: 20%;
+    }
+
+    .imgy1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .imgy2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .imgy3 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .imgy4 {
+        width: 100px;
+        height: 100px;
+    }
+
+    p {
+        font-size: 150%;
+
+    }
+
+    .columny {
+        padding-left: 10%;
+
+        height: 50%;
+    }
+
+    footer .map {
+        padding-top: 2%;
+    }
+
+    footer h4 {
+        padding-bottom: 5%;
+        font-size: 20%;
+    }
+
+    footer p {
+        padding-bottom: 10%;
+        font-size: 30%;
+    }
+}

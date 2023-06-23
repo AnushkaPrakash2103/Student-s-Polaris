@@ -1,0 +1,73 @@
+body
+{
+    margin: 0;
+    background-color: #040624;
+}
+
+.Header button
+{
+    background-color: #040624;
+    color: white;
+    font-family: 'Kodchasan';
+    border: none;
+    font-size: 100%;
+}
+
+h1
+{
+    padding-top: 75px;
+    padding-bottom: 50px;
+    color: white;
+    font-family: 'Kodchasan';
+    text-align: center;
+}
+
+.Header .hdrght .loggedIn img
+{
+    top: -2px !important;
+}
+.dropdown-content button
+{
+    background-color: black;
+}
+.About 
+{
+    text-align: center;
+    padding: 5% 5%;
+}
+
+.About .para
+{
+    text-align: center;
+}
+
+.About p
+{
+    text-align: justify;
+    color: white;
+    font-family: 'Kodchasan';
+    font-size: large;
+}
+
+footer .map
+{
+    padding-top: 20px;
+}
+footer h4
+{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+footer p
+{
+    color: white;
+    font-family: 'Kodchasan';
+}
+
+@media screen and (max-width: 768px)  
+{
+    .Header button
+    {
+        background-color: black;
+    }
+}
