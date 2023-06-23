@@ -11,10 +11,27 @@ also inlude css style link for header = CSS/header.css and java script file
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#home"><button type="submit" name="header" value="1">HOME</button></a>
             <a href="#about"><button type="submit" name="header" value="2">ABOUT</button></a>
-            <a href="#about"><button type="submit" name="header" value="3">LOGIN / SIGN UP</button></a>
+
+            <% if(log==false) {  %>
+                <a href="#about"><button type="submit" name="header" value="3">LOGIN / SIGN UP</button></a>
+            <% } %>
+            <% if(log==true) {  %>
+                <a href="#about"><button type="submit" name="header" value="6">BLOG</button></a>
+            <% } %>
             <a href="javascript:void(0);" class="icon" onclick="openNav()">
             <i class="fa fa-bars"></i>
             </a>
+            <% if(log == true) { %>
+                <a class="loggedIn">|</a>
+                <a  class="loggedIn dropdown"><img src="images/user.png" height="31 px" >
+                <div class="dropdown-content">
+                    <p><%= userName %></p>
+                    <p><button type="submit" name="header" value="4">LOGOUT</button></p>
+                    <p><button type="submit" name="header" value="5">SIGNOUT</button></p>
+                </div>
+                </a>
+            <% } %>
         </form>
- </div>
+    </div>
+
 </div>
