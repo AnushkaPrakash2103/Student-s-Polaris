@@ -1,4 +1,5 @@
 body {
+
   background-color: rgb(2, 2, 29);
   margin: 0;
 }
@@ -8,6 +9,7 @@ h2 {
   font-family: Kodchasan;
   font-size: 35px;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -19,6 +21,7 @@ img.column1
   border-style: solid;
   border-radius: 100%;
   border-color: aqua;
+
 }
 .columnx1
 {
@@ -44,6 +47,7 @@ img.column1
 }
 
 button {
+
   font-family: 'Kodchasan';
   font-size: 100%;
   color: white;
@@ -63,6 +67,7 @@ button:hover {
   font-size: 25px;
   text-transform: uppercase;
   color: rgb(223, 232, 215);
+
 }
 
 .semestercontainer_header {
@@ -90,6 +95,7 @@ footer p {
 color: white;
 font-family: 'Kodchasan';
 padding-bottom: 2%;
+
 }
 
 
@@ -108,6 +114,7 @@ font-weight: bold;
 }
 
 
+
 @media screen and (max-width: 768px)
 {
 img.column1
@@ -118,12 +125,14 @@ img.column1
   border-color: aqua;
   display: block;
   text-align: center;
+
 }
 .columnx1
 {
   text-align: center;
   padding: 100px 0 0 0;
   float: none;
+
 }
 .rowx1
 {
@@ -135,6 +144,7 @@ img.column1
 .columnx1 button
 {
   margin: 0 auto;
+
   position: static;
   text-decoration: none;
   font-family: Kodchasan;
@@ -146,6 +156,7 @@ img.column1
   height: 0;
 }
 .button-btn :hover
+
 {
   font-weight: bold;
 }
@@ -176,3 +187,4 @@ padding-bottom: 2%;
  
    
    
+
