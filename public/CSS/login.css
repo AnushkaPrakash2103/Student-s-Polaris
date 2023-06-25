@@ -178,7 +178,7 @@ span.psw a{
     color: #f1f1f1;
     text-align: center;
     /* border: 1px solid #f1f1f1; */
-    height: 8%;
+    /* height: 8%;*/
     background-color: #069FC0;
     font-weight: bold;
     font-family: Kodchasan;
@@ -276,92 +276,75 @@ footer p {
  /*****************************************************************/
 /*********************************************************************/
 /* For mobile devices */
-@media only screen and (max-width: 800px ) {
-
-    .containerMain1 {
-    width: 90%;
-    margin: 5%;
-    }
-
-    .container1 {
-        font-size: 14px;
-    }
-    .containerMain2{
-        width: 90%;
-        margin: 0 0 0 5%;  
-    }
-    .container2 {
-        font-size: 14px;
-    }
-    .containerMain3{
-        width: 90%;
-        margin: 0 0 0 5%;
-    }
-    .container3 {
-        font-size: 14px;
-    }
-    /**************************************/
-    .headline{
-        font-size: 10px;
-        text-align: center;
-     }
-     .columnb {
-        width: 100%;
-        padding-left: 100px;
-        padding-right: 100px;
-        height: 50%; 
-      }
-}
-@media only screen and (max-width: 400px ) {
-    .containerMain1 {
-        width: 90%;
-        margin: 0 0 0 5% ;
-        }
+@media only screen and (max-width: 768px ) {
     
-        .container1 {
-            font-size: 10px;
-        }
-        .column1{
-            font-size: 12px;
-        }
-        .containerMain2{
-            width: 90%;
-            margin: 0 0 0 5%;  
-        }
-        .container2 {
-            font-size: 10px;
-        }
-        .column2{
-            font-size: 12px;
-        }
-        .containerMain3{
-            width: 90%;
-            margin: 0 0 0 5%;
-        }
-        .container3 {
-            font-size: 10px;
-        }
-        .column3{
-            font-size: 12px;
-        }
-        button {
-            padding: 6px 10px;
-            font-size: small;
-        }
-        .cancelbtn {
-            padding: 5px 12px;
-        }
-        /*************************/
-        .headline{
-            font-size: 8px;
-            text-align: center;
-         }
-         .columnb {
-            width: 100%;
-            align-items: center;
-            align-content: center;
-            height: 50%; 
-          }
-         /*********************/
+    .fulllogin_container{
+        background-color: #00041C;
+        margin: -6%;
+        padding-bottom: 40%;
+    
+    }
+    .login_container {
+      width: 60%;
+      align-items: center;
+      margin-left: 20%;
+    }
+
+    .containerlogin {
+        font-size: 14px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .fullsignUp_container{
+        background-color: #00041C;
+        margin: -6%;
+        padding-bottom: 40%;
+    }
+    .signup_container{
+        width: 60%;
+        align-items: center;
+        margin-left: 20%;
         
     }
+    .containersignUp{
+        font-size: 14px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .headline_login{
+        text-align: center;
+        font-size:  150%;
+        color: white;
+        padding-top: 3%;
+     } 
+     .fullforgot_container{
+        background-color: #00041C;
+        margin: -6%;
+        padding-bottom: 40%;
+     }
+    .forgot_container{
+        width: 60%;
+        align-items: center;
+        margin-left: 20%;
+    }
+    .containerforgot{
+        font-size: 10px;
+        /* padding-left: 5%; */
+        /* padding-right: 5%; */
+    }
+    .smallcontainerfooter { 
+        /* padding: 16px;  */
+        color: #f1f1f1;
+       padding-left: 60px;
+    }
+   .smallcontainerfooter .textnew{
+       padding-left: 0;
+   }
+   .loginfooter{
+    background-color: black;
+    background-size: cover;
+    margin: -2%;
+    /* height: 10%; */
+  }
+    /**************************************/
+}
