@@ -187,7 +187,7 @@ button:hover
     /* height: 10%; */
   }
 /* For mobile devices */
-@media (max-width: 767px) {
+@media only screen and (max-width: 768px ) {
   /* Styles for screens up to 767px width (typically mobile devices) */
   .headline{
     padding-bottom: 50%;
