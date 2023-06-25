@@ -25,14 +25,16 @@
   <form class="semestercontainer" action="/semester" method="post">
     <h2 class="ex1">CHOOSE YOUR SEMESTER</h2>
     <div class="rowx1">
-      <div class="columnx1">
-        <img class="column1" id="semesterOneImage" src="" alt="One">
-        <button name="sem" onclick="location.href='/semester?year=<%= year %>&semester=1'" class="button-btn"><%= semesterOne %></button>
-      </div>
-      <div class="columnx1">
-        <img class="column1" id="semesterTwoImage" src="" alt="Two">
-        <button name="sem" onclick="location.href='/semester?year=<%= year %>&semester=2'" class="button-btn"><%= semesterTwo %></button>
-      </div>
+
+      <figure class="columnx1">
+        <p><img class="column1" id="semesterOneImage" src="" alt="One">
+        <figcaption><button  type="submit" name="sem" onclick="location.href='/semester?year=<%= year %>&semester=1'" value="1" class="button-btn"><%= semesterOne %></button></figcaption>
+      </figure>
+      <figure class="columnx1 right">
+        <p><img class="column1" id="semesterTwoImage" src="" alt="Two">
+        <figcaption><button type="submit" name="sem" onclick="location.href='/semester?year=<%= year %>&semester=2'" value="2" class="button-btn"><%= semesterTwo %></button></figcaption>
+      </figure>
+
     </div>
   </form>
 
