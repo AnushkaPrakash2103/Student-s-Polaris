@@ -20,21 +20,23 @@
 
 <body>
   <div class="semestercontainer_header">
-  <%- include("header") %>
-</div>
-<form class="semestercontainer" action="/semester" method="post"></form>
-  <div class="ex1">Choose Your Semester</div>
-  <div class="rowx1">
-    <div class="columnx1">
-      <img class="column1" id="semesterOneImage" src="" alt="One">
-      <a class="sem" href="/semester?year=<%= year %>&semester=1" class="button-btn "><%= semesterOne %></a>
-    </div>
-    <div class="columnx1">
-      <img class="column1" id="semesterTwoImage" src="" alt="Two">
-      <a class="sem" href="/semester?year=<%= year %>&semester=2" class="button-btn "><%= semesterTwo %></a>
+    <%- include("header") %>
+  </div>
+  <form class="semestercontainer" action="/semester" method="post">
+    <h2 class="ex1">CHOOSE YOUR SEMESTER</h2>
+    <div class="rowx1">
+
+      <figure class="columnx1">
+        <p><img class="column1" id="semesterOneImage" src="" alt="One">
+        <figcaption><button  type="submit" name="sem" onclick="location.href='/semester?year=<%= year %>&semester=1'" value="1" class="button-btn"><%= semesterOne %></button></figcaption>
+      </figure>
+      <figure class="columnx1 right">
+        <p><img class="column1" id="semesterTwoImage" src="" alt="Two">
+        <figcaption><button type="submit" name="sem" onclick="location.href='/semester?year=<%= year %>&semester=2'" value="2" class="button-btn"><%= semesterTwo %></button></figcaption>
+      </figure>
+
     </div>
   </form>
-  </div>
 
   <script>
     // Function to update the semester images based on the selected year
@@ -58,13 +60,21 @@
     const selectedYear = "<%= year %>";
     updateSemesterImages(selectedYear);
   </script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-   <script src="JS/header.js"></script>
- </body>
-  <div class="semfooter">
-    <%- include("footer") -%>
-  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="JS/header.js"></script>
+</body>
+<div class="semfooter">
+ <%- include("footer") -%>
+</div>
 
+
+
+
+
+
+
+
+  
 
 
 

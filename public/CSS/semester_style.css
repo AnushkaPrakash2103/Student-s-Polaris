@@ -1,33 +1,53 @@
 body {
-  background-color: #00041C;
-  font-family: Kodchasan;
+
+  background-color: rgb(2, 2, 29);
+  margin: 0;
 }
+h2 {
+  padding-top: 40px;
+  color: rgb(223, 232, 215);
+  font-family: Kodchasan;
+  font-size: 35px;
+}
+
 * {
   box-sizing: border-box;
 }
 
 img.column1
 {
-  height: 170px;
+  height: 225px;
   margin: 0 auto;
+  border-style: solid;
   border-radius: 100%;
-  border: solid #069FC0 2px;
+  border-color: aqua;
+
 }
 .columnx1
 {
   display: inline;
-  padding: 0 7%;
-}
-.rowx1
-{
-  padding-top: 75px;
+  padding: 0;
+  padding-right: 75px;
   text-align: center;
-  padding-left: 225px;
-  padding-bottom: 50px;
-  margin-bottom: 200px;
+  float: left;
 }
 
-a button {
+.right
+{
+  padding-left: 75px;
+  padding-right: 0;
+}
+
+.rowx1
+{
+  text-align: center;
+  height: 500px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+button {
+
   font-family: 'Kodchasan';
   font-size: 100%;
   color: white;
@@ -37,23 +57,17 @@ a button {
   height: 0px;
 }
 
-a button:hover {
+button:hover {
   font-weight: bold;
 }
-.sem
+.columnx1 button
 {
-  position: relative;
-  top: 100px;
-  right: 17%;
   text-decoration: none;
   font-family: Kodchasan;
   font-size: 25px;
   text-transform: uppercase;
   color: rgb(223, 232, 215);
-}
-.sem:hover
-{
-  font-weight: bold;
+
 }
 
 .semestercontainer_header {
@@ -66,22 +80,23 @@ a button:hover {
 
 .semestercontainer {
   background-color: #00041C;
-
+  /* margin: -1.5%; */
   padding: 0%;
 }
 footer .map {
 padding-top: 2%;
 }
 footer h4 {
-padding-bottom: 2%;
+padding-bottom: 3%;
 font-weight: bold;
 }
 
 footer p {
 color: white;
 font-family: 'Kodchasan';
-padding-bottom: 1%;
-} 
+padding-bottom: 2%;
+
+}
 
 
 .ex1 {
@@ -97,9 +112,8 @@ padding-bottom: 1%;
 .ex1:hover {
 font-weight: bold;
 }
-.semfooter{
-  margin: -1%;
-}
+
+
 
 @media screen and (max-width: 768px)
 {
@@ -111,29 +125,38 @@ img.column1
   border-color: aqua;
   display: block;
   text-align: center;
+
 }
 .columnx1
 {
   text-align: center;
   padding: 100px 0 0 0;
+  float: none;
+
 }
 .rowx1
 {
   text-align: center;
   padding: 100px 0 0 0;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
+  height: fit-content;
 }
-.sem
+.columnx1 button
 {
+  margin: 0 auto;
+
   position: static;
   text-decoration: none;
   font-family: Kodchasan;
   font-size: 25px;
   color: rgb(223, 232, 215);
   display: block;
+  background-color: #00041C;
   padding: 75px 0 150px 0;
+  height: 0;
 }
 .button-btn :hover
+
 {
   font-weight: bold;
 }
@@ -164,3 +187,4 @@ padding-bottom: 2%;
  
    
    
+

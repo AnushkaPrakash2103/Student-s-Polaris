@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Student's Polaris</title>
+        <link rel="icon" href="https://i.postimg.cc/br1H7MKF/favicon-2.png"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kodchasan:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="CSS/about.css"></link>
+
+        <!-- Header footer -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="CSS/header.css"></link>
+        <link rel="stylesheet" href="CSS/footer.css"></link>
+        <!---->
+    </head>
+
+    <body>
+        <%- include("header") -%> <!-- INCLUDING HEADER -->
+        <div class="container">
+            <h1>ABOUT</h1>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 75%; margin: 0 auto;">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+          
+                <div class="item active">
+                  <img src="images/academicBuilding.jpg" alt="Los Angeles" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h3>Academic Building</h3>
+                    <p>Welcome to IIT Patna</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/Library.jpeg" alt="Chicago" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h3>Library</h3>
+                    <p>Where you'll be challenged academically, but will also have the oppurtunity to develop your talents and passion.</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/senateHall.jpeg" alt="New York" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h3>Senate Hall</h3>
+                    <p>From academic lectures, seminars and workshops ...</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/fest.jpg" alt="New York" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h3>Fests</h3>
+                    <p>..... to social events, there is something for everyone.</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/nescafe.jpeg" alt="New York" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h3>Nescafe</h3>
+                    <p>Just remember to make most of your time here.</p>
+                  </div>
+                </div>
+
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="About">
+            <div class="para">
+                <p>Indian Institute of Technology Patna is one of the emerging IITs established by an Act of the Indian Parliament on August 06, 2008. Nurturing innovation and excellence amongst the student community for the last 15 years, the Indian Institute of Technology (IIT) Patna has been ever-blossoming as an Institute of national importance. The Institute focuses on creating and developing students into leaders and researchers to empower the country with their contributions in various disciplines in the future</p>
+                <p>The Institute has developed modern facilities that are fully equipped with state-of-the-art facilities (equipment, software, and machines) that are routinely used to train and educate students in the Institute.</p>
+            </div>
+        </div>
+            
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="JS/header.js"></script>
+    <script src="JS/about.js"></script>
+    </body>
+
+    <%- include("footer") -%> <!-- INCLUDING FOOTER-->
+
