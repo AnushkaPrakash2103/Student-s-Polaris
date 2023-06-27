@@ -63,7 +63,7 @@ app.post("/year", (req, res) => {
 
 //for semester
 app.get("/semester", (req, res) => {
-  const year = req.query.year;
+   year = req.query.year;
   let semesterOne, semesterTwo, semesterOneImage, semesterTwoImage;
 
   if (year === "1") {
@@ -89,40 +89,408 @@ app.get("/semester", (req, res) => {
   } else {
     return res.send("Invalid year selection");
   }
-
+  let secondTableVisible = loggedIn;
   res.render("index_sem", {
     year,
     semesterOne,
     semesterTwo,
     semesterOneImage,
     semesterTwoImage,
+    secondTableVisible,
     log: loggedIn, userName: userName,
   });
 });
 
-app.post("/semester",(req,res)=>{
 
-  semester=req.body.sem;
-  if(year == "1"){
-    //console.log(year);
-  }
- else{ 
-  //console.log(year);
-  res.redirect("/branch");
- }
-});
-//-----------------------------
 
 
 //for branch
+
+
+app.post("/semester", (req, res) => {
+
+   semester = req.body.sem;
+  
+  
+  console.log("year: " + year + ", semester: " + semester);
+
+  if (year === "1") {
+    if (semester === "1") {
+      res.redirect("/sem1");
+    } else if (semester === "2") {
+      res.redirect("/sem2");
+    } else {
+      res.redirect("/branch");
+    }
+  } else {
+    res.redirect("/branch");
+  }
+});
+
+app.post("/branch", (req, res) => {
+   branch = req.body.branchInput;
+ 
+  console.log("year: " + year + ", semester: " + semester + ", branch: " + branch);
+   if(year ==="2"){
+  if (semester === "1") {
+    if (branch === "1") {
+      res.redirect("/sem3_ai");
+    }  if (branch === "2") {
+      res.redirect("/sem3_cb");
+    } 
+    if (branch === "3") {
+      res.redirect("/sem3_ce");
+    } 
+    if (branch === "4") {
+      res.redirect("/sem3_cse");
+    } 
+    if (branch === "5") {
+      res.redirect("/sem3_eee");
+    } 
+    if (branch === "6") {
+      res.redirect("/sem3_me");
+    }
+    if (branch === "7") {
+      res.redirect("/sem3_mme");
+    }
+    if (branch === "8") {
+      res.redirect("/sem3_mnc");
+    }
+    if (branch === "8") {
+      res.redirect("/sem3_ep");
+    }
+  } else if (semester === "2") {
+    if (branch === "1") {
+      res.redirect("/sem4_ai");
+    } 
+    if (branch === "2") {
+      res.redirect("/sem4_cb");
+    } 
+    if (branch === "3") {
+      res.redirect("/sem4_ce");
+    }
+    if (branch === "4") {
+      res.redirect("/sem4_cse");
+    } 
+    if (branch === "5") {
+      res.redirect("/sem4_eee");
+    } 
+    if (branch === "6") {
+      res.redirect("/sem4_me");
+    }
+    if (branch === "7") {
+      res.redirect("/sem4_mme");
+    }
+    if (branch === "8") {
+      res.redirect("/sem4_mnc");
+    }
+    if (branch === "9") {
+      res.redirect("/sem4_ep");
+    }
+  }}
+  if(year ==="3"){
+    if (semester === "1") {
+      if (branch === "1") {
+        res.redirect("/sem5_ai");
+      } 
+      if (branch === "2") {
+        res.redirect("/sem5_cb");
+      } 
+      if (branch === "3") {
+        res.redirect("/sem5_ce");
+      }
+      if (branch === "4") {
+        res.redirect("/sem5_cse");
+      } 
+      if (branch === "5") {
+        res.redirect("/sem5_eee");
+      } 
+      if (branch === "6") {
+        res.redirect("/sem5_me");
+      }
+      if (branch === "7") {
+        res.redirect("/sem5_mme");
+      }
+      if (branch === "8") {
+        res.redirect("/sem5_mnc");
+      }
+      if (branch === "9") {
+        res.redirect("/sem5_ep");
+      }
+
+    } else if (semester === "2") {
+      if (branch === "1") {
+        res.redirect("/sem6_ai");
+      } 
+      if (branch === "2") {
+        res.redirect("/sem6_cb");
+      } 
+      if (branch === "3") {
+        res.redirect("/sem6_ce");
+      }
+      if (branch === "4") {
+        res.redirect("/sem6_cse");
+      } 
+      if (branch === "5") {
+        res.redirect("/sem6_eee");
+      } 
+      if (branch === "6") {
+        res.redirect("/sem6_me");
+      }
+      if (branch === "7") {
+        res.redirect("/sem6_mme");
+      }
+      if (branch === "8") {
+        res.redirect("/sem6_mnc");
+      }
+      if (branch === "9") {
+        res.redirect("/sem6_ep");
+      }
+    }}
+    if(year ==="4"){
+      if (semester === "1") {
+        if (branch === "1") {
+          res.redirect("/sem7_ai");
+        } 
+        if (branch === "2") {
+          res.redirect("/sem7_cb");
+        } 
+        if (branch === "3") {
+          res.redirect("/sem7_ce");
+        }
+        if (branch === "4") {
+          res.redirect("/sem7_cse");
+        } 
+        if (branch === "5") {
+          res.redirect("/sem7_eee");
+        } 
+        if (branch === "6") {
+          res.redirect("/sem7_me");
+        }
+        if (branch === "7") {
+          res.redirect("/sem7_mme");
+        }
+        if (branch === "8") {
+          res.redirect("/sem7_mnc");
+        }
+        if (branch === "9") {
+          res.redirect("/sem7_ep");
+        }
+      } else if (semester === "2") {
+        if (branch === "1") {
+          res.redirect("/sem8_ai");
+        } 
+        if (branch === "2") {
+          res.redirect("/sem8_cb");
+        } 
+        if (branch === "3") {
+          res.redirect("/sem8_ce");
+        }
+        if (branch === "4") {
+          res.redirect("/sem8_cse");
+        } 
+        if (branch === "5") {
+          res.redirect("/sem8_eee");
+        } 
+        if (branch === "6") {
+          res.redirect("/sem8_me");
+        }
+        if (branch === "7") {
+          res.redirect("/sem8_mme");
+        }
+        if (branch === "8") {
+          res.redirect("/sem8_mnc");
+        }
+        if (branch === "9") {
+          res.redirect("/sem8_ep");
+        }
+      }} else {
+    res.redirect("/branch");
+  }
+});
+
+//----------------------------
+
 app.get("/branch", (req, res) => {
+ 
   res.render("branchpage",{log: loggedIn, userName: userName});
 });
-app.post("/branch", (req, res) => {
-  branch=req.body.branchInput;
-  console.log("year: "+year+", semester: "+semester+" ,branch: "+branch);
+
+
+
+app.get("/sem1", (req, res) => {
+  res.render("sem1", {secondTableVisible: loggedIn, log: loggedIn, userName: userName });
 });
-//----------------------------
+
+app.get("/sem2", (req, res) => {
+  res.render("sem2", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+
+ app.get("/sem3_eee", (req, res) => {
+  res.render("sem3_eee", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+
+app.get("/sem4_eee", (req, res) => {
+  res.render("sem4_eee", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem5_eee", (req, res) => {
+  res.render("sem5_eee", {secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+
+app.get("/sem6_eee", (req, res) => {
+  res.render("sem6_eee", {secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem7_eee", (req, res) => {
+  res.render("sem7_eee", {secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem8_eee", (req, res) => {
+  res.render("sem8_eee", {secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem3_ai", (req, res) => {
+  res.render("sem3_ai", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem4_ai", (req, res) => {
+  res.render("sem4_ai", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem5_ai", (req, res) => {
+  res.render("sem5_ai", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem6_ai", (req, res) => {
+  res.render("sem6_ai", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem7_ai", (req, res) => {
+  res.render("sem3_ai", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem8_ai", (req, res) => {
+  res.render("sem3_ai", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem3_cse", (req, res) => {
+  res.render("sem3_cse", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem4_cse", (req, res) => {
+  res.render("sem4_cse", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem5_cse", (req, res) => {
+  res.render("sem5_cse", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem6_cse", (req, res) => {
+  res.render("sem6_cse", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem7_cse", (req, res) => {
+  res.render("sem7_cse", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem8_cse", (req, res) => {
+  res.render("sem8_cse", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem3_cb", (req, res) => {
+  res.render("sem3_cb", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem4_cb", (req, res) => {
+  res.render("sem4_cb", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem5_cb", (req, res) => {
+  res.render("sem5_cb", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem6_cb", (req, res) => {
+  res.render("sem6_cb", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem7_cb", (req, res) => {
+  res.render("sem3_cb", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem8_cb", (req, res) => {
+  res.render("sem3_cb", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem3_ce", (req, res) => {
+  res.render("sem3_ce", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem4_ce", (req, res) => {
+  res.render("sem4_ce", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem5_ce", (req, res) => {
+  res.render("sem5_ce", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem6_ce", (req, res) => {
+  res.render("sem6_ce", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem7_ce", (req, res) => {
+  res.render("sem7_ce", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem8_ce", (req, res) => {
+  res.render("sem8_ce", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem3_me", (req, res) => {
+  res.render("sem3_me", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem4_me", (req, res) => {
+  res.render("sem4_me", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem5_me", (req, res) => {
+  res.render("sem5_me", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem6_me", (req, res) => {
+  res.render("sem6_me", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem7_me", (req, res) => {
+  res.render("sem7_me", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem8_me", (req, res) => {
+  res.render("sem8_me", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem3_mme", (req, res) => {
+  res.render("sem3_mme", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem4_mme", (req, res) => {
+  res.render("sem4_mme", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem5_mme", (req, res) => {
+  res.render("sem5_mme", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem6_mme", (req, res) => {
+  res.render("sem6_mme", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem7_mme", (req, res) => {
+  res.render("sem7_mme", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem8_mme", (req, res) => {
+  res.render("sem8_mme", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem3_mnc", (req, res) => {
+  res.render("sem3_mnc", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem4_mnc", (req, res) => {
+  res.render("sem4_mnc", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem5_mnc", (req, res) => {
+  res.render("sem5_mnc", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem6_mnc", (req, res) => {
+  res.render("sem6_mnc", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem7_mnc", (req, res) => {
+  res.render("sem7_mnc", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem8_mnc", (req, res) => {
+  res.render("sem8_mnc", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem3_ep", (req, res) => {
+  res.render("sem3_ep", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem4_ep", (req, res) => {
+  res.render("sem4_ep", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem5_ep", (req, res) => {
+  res.render("sem5_ep", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem6_ep", (req, res) => {
+  res.render("sem6_ep", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem7_ep", (req, res) => {
+  res.render("sem7_ep", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+app.get("/sem8_ep", (req, res) => {
+  res.render("sem8_ep", { secondTableVisible: loggedIn, log: loggedIn, userName: userName });
+});
+
 
 
 //for login and signup

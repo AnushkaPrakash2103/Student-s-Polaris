@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table-like Structure</title>
+  <link rel="stylesheet" type="text/css" href="./CSS/sem1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="CSS/header.css"></link>
+  <link rel="stylesheet" href="CSS/footer.css"></link>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kodchasan:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sem3container_header">
+    <%- include("header") %>
+  </div>
+  <h1 class="header-top">SEMESTER VIII</h1>
+  <h2 class="header-left">CORE SUBJECTS</h2>
+  <h2 class="header-center">COURSE DETAILS</h2>
+  <table class="up">
+    <tr class="row1">
+      <th>COURSE CODE</th>
+      <th>COURSE NAME</th>
+      <th>CREDITS</th>
+      <th>PROFESSOR</th>
+    </tr>
+    <tr>
+      <td>EE200</td>
+      <td>SEMICONDUCTOR DEVICES AND CIRCUITS</td>
+      <td>3</td>
+      <td>P.K Tiwari</td>
+    </tr>
+    <tr>
+      <td>EE201</td>
+      <td>DIGITAL CIRCUITS AND MICROPROCESSORS</td>
+      <td>6</td>
+      <td>Sourav Pandey</td>
+    </tr>
+    <tr>
+      <td>EE202</td>
+      <td>DIGITAL CIRCUITS LABORATORY</td>
+      <td>3</td>
+      <td>Sourav Pandey</td>
+    </tr>
+    <tr>
+      <td>EE221</td>
+      <td>SIGNALS AND SYSTEMS</td>
+      <td>6</td>
+      <td>Amit Kumar, Mahesh Kohelkar</td>
+    </tr>
+    <tr>
+      <td>MA201</td>
+      <td>MATHEMATICS-III</td>
+      <td>8</td>
+      <td>XYXYXXY</td>
+    </tr>
+  </table>
+  <% if (typeof secondTableVisible !== 'undefined' && secondTableVisible) { %>
+  <h2 class="header-center">COURSE MATERIALS</h2>
+  <table class="down">
+    <tr class="row1">
+      <th>SUBJECTS</th>
+      <th>NOTES AND PPTs</th>
+      <th>PYQs</th>
+      <th>BOOKS</th>
+    </tr>
+    <tr>
+      <td>EE200</td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+    </tr>
+    <tr>
+      <td>EE201</td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+    </tr>
+    <tr>
+        <td>EE202</td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      </tr>
+      <tr>
+        <td>EE221</td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      </tr>
+      <tr>
+        <td>MA201</td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      </tr>
+  </table>
+  <% } else { %>
+    <div class="container">
+      <div class="box">
+        <p>LOGIN TO GET COURSE MATERIALS</p>
+      </div>
+    </div>
+    <% } %>
+
+      <div class="divider">
+        <span class="divider-dot"></span>
+        <span class="divider-dot"></span>
+        <span class="divider-dot"></span>
+        <span class="divider-dot"></span>
+        <span class="divider-dot"></span>
+      </div>
+
+
+      <h2 class="header-left">HSS ELECTIVES</h2>
+      <h2 class="header-center">COURSE DETAILS</h2>
+      <table class="up">
+        <tr class="row1">
+          <th>COURSE CODE</th>
+          <th>COURSE NAME</th>
+          <th>CREDITS</th>
+          <th>PROFESSOR</th>
+        </tr>
+        <tr>
+          <td>HS201</td>
+          <td>INTRODUCTORY MICROECONOMICS</td>
+          <td>6</td>
+          <td>P.K Tiwari</td>
+        </tr>
+        <tr>
+          <td>HS231</td>
+          <td>INTRODUCTORY SOCIOLOGY</td>
+          <td>6</td>
+          <td>Sourav Pandey</td>
+        </tr>
+        <tr>
+          <td>HS221</td>
+          <td>FUNDAMENTALS OF LINGUISTIC SCIENCE</td>
+          <td>3</td>
+          <td>Sourav Pandey</td>
+        </tr>
+      </table>
+      <% if (typeof secondTableVisible !== 'undefined' && secondTableVisible) { %>
+      <h2 class="header-center">COURSE MATERIALS</h2>
+      <table class="down">
+        <tr class="row1">
+          <th>SUBJECTS</th>
+          <th>NOTES AND PPTs</th>
+          <th>PYQs</th>
+          <th>BOOKS</th>
+        </tr>
+        <tr>
+          <td>HS201</td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        </tr>
+        <tr>
+          <td>HS231</td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        </tr>
+        <tr>
+            <td>HS221</td>
+            <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+            <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+            <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+          </tr>
+      </table>
+      <% } else { %>
+        <div class="container">
+          <div class="box">
+            <p>LOGIN TO GET COURSE MATERIALS</p>
+          </div>
+        </div>
+        <% } %>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="JS/header.js"></script>
+</body>
+<div class="semfooter">
+  <%- include("footer") -%>
+ </div>

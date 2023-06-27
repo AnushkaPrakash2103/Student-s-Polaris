@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table-like Structure</title>
+  <link rel="stylesheet" type="text/css" href="./CSS/sem1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kodchasan:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/header.css"></link>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="CSS/footer.css"></link>
+</head>
+<body>
+  <div class="sem2container_header">
+    <%- include("header") %>
+  </div>
+  <h1 class="header-top">SEMESTER II</h1>
+  <h2 class="header-left">SUBJECTS</h2>
+  <h2 class="header-center">COURSE DETAILS</h2>
+  <table class="up">
+    <tr class="row1">
+      <th>COURSE CODE</th>
+      <th>COURSE NAME</th>
+      <th>CREDITS</th>
+      <th>PROFESSOR</th>
+    </tr>
+    <tr>
+      <td>CB102</td>
+      <td>BIOLOGY</td>
+      <td>3</td>
+      <td>XYXYXXY</td>
+    </tr>
+    <tr>
+      <td>CE102</td>
+      <td>ENVIRONMENTAL STUDIES</td>
+      <td>3</td>
+      <td>XYXYXXY</td>
+    </tr>
+    <tr>
+      <td>CH103</td>
+      <td> INTRODUCTORY CHEMISTRY</td>
+      <td>8</td>
+      <td>XYXYXXY</td>
+    </tr>
+    <tr>
+      <td>CH110</td>
+      <td>CHEMISTRY LABORATORY</td>
+      <td>3</td>
+      <td>XYXYXXY</td>
+    </tr>
+    <tr>
+      <td>CS102</td>
+      <td>PROGRAMMING AND DATA STRUCTURES</td>
+      <td>6</td>
+      <td>XYXYXXY</td>
+    </tr>
+    <tr>
+      <td>CS112</td>
+      <td>PROGRAMMING AND DATA STRUCTURES</td>
+      <td>3</td>
+      <td>XYXYXXY</td>
+    </tr>
+    <tr>
+        <td>EE102</td>
+        <td>BASIC ELECTRONICS LABORATORY</td>
+        <td>3</td>
+        <td>XYXYXXY</td>
+      </tr>
+      <tr>
+        <td>MA102</td>
+        <td>MATHEMATICS-II</td>
+        <td>8</td>
+        <td>XYXYXXY</td>
+      </tr>
+      <tr>
+        <td>ME102</td>
+        <td>ENGINEERING MECHANICS</td>
+        <td>8</td>
+        <td>XYXYXXY</td>
+      </tr>
+  </table>
+  <% if (typeof secondTableVisible !== 'undefined' && secondTableVisible) { %>
+  <h2 class="header-center">COURSE MATERIALS</h2>
+  <table class="down">
+    <tr class="row1">
+      <th>SUBJECTS</th>
+      <th>NOTES AND PPTs</th>
+      <th>PYQs</th>
+      <th>BOOKS</th>
+    </tr>
+    <tr>
+      <td>CB102</td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+    </tr>
+    <tr>
+      <td>CE102</td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+    </tr>
+    <tr>
+        <td>CH103</td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      </tr>
+      <tr>
+        <td>CH110</td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      </tr>
+      <tr>
+        <td>CS102</td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      </tr>
+      <tr>
+        <td>CS112</td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      </tr>
+      <tr>
+      <td>EE103</td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+    </tr>
+    <tr>
+        <td>MA102</td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      </tr>
+      <tr>
+        <td>ME102</td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src="/images/file.png" alt="file"></a></td>
+      </tr>
+  </table>
+  <% } else { %>
+    <div class="container">
+      <div class="box">
+        <p>LOGIN TO GET COURSE MATERIALS</p>
+      </div>
+    </div>
+    <% } %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="JS/header.js"></script>
+</body>
+<div class="semfooter">
+  <%- include("footer") -%>
+ </div>

@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table-like Structure</title>
+  <link rel="stylesheet" type="text/css" href="./CSS/sem1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kodchasan:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/header.css"></link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/footer.css"></link>
+</head>
+<body>
+  <div class="sem4_header">
+    <%- include("header") %>
+  </div>
+  <h1 class="header-top">SEMESTER IV</h1>
+  <h2 class="header-left">CORE SUBJECTS</h2>
+  <h2 class="header-center">COURSE DETAILS</h2>
+  <table class="up">
+    <tr class="row1">
+      <th>COURSE CODE</th>
+      <th>COURSE NAME</th>
+      <th>CREDITS</th>
+      <th>PROFESSOR</th>
+    </tr>
+    <tr>
+      <td>EE203</td>
+      <td>ANALOG INTEGRATED CIRCUITS</td>
+      <td>6</td>
+      <td>P.K Tiwari</td>
+    </tr>
+    <tr>
+      <td>EE204</td>
+      <td>ANALOG CIRCUTS LABORATORY</td>
+      <td>3</td>
+      <td>Amit Kumar</td>
+    </tr>
+    <tr>
+      <td>EE205</td>
+      <td>NETWORK ANALYSIS AND SYNTHESIS</td>
+      <td>6</td>
+      <td>Somnath Pradhan</td>
+    </tr>
+    <tr>
+      <td>EE280</td>
+      <td>ELECTRICAL MACHINES</td>
+      <td>6</td>
+      <td>S.K Parida, S.SivaSubramani</td>
+    </tr>
+    <tr>
+      <td>EE281</td>
+      <td>ELECTRICAL MACHINES LABORATORY</td>
+      <td>3</td>
+      <td>S.K Parida, S.SivaSubramani</td>
+    </tr>
+    <tr>
+      <td>MA225</td>
+      <td>PROBABILITY THEORY AND RANDOM PROCESSES</td>
+      <td>8</td>
+      <td>XYXYXXY</td>
+    </tr>
+  </table>
+  <% if (typeof secondTableVisible !== 'undefined' && secondTableVisible) { %>
+  <h2 class="header-center">COURSE MATERIALS</h2>
+  <table class="down">
+    <tr class="row1">
+      <th>SUBJECTS</th>
+      <th>NOTES AND PPTs</th>
+      <th>PYQs</th>
+      <th>BOOKS</th>
+    </tr>
+    <tr>
+      <td>EE203</td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+    </tr>
+    <tr>
+      <td>EE204</td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+      <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+    </tr>
+    <tr>
+        <td>EE205</td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+      </tr>
+      <tr>
+        <td>EE280</td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+      </tr>
+      <tr>
+        <td>EE281</td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+      </tr>
+      <tr>
+        <td>MA225</td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+        <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+      </tr>
+  </table>
+  <% } else { %>
+    <div class="container">
+      <div class="box">
+        <p>LOGIN TO GET COURSE MATERIALS</p>
+      </div>
+    </div>
+    <% } %>
+
+      <div class="divider">
+        <span class="divider-dot"></span>
+        <span class="divider-dot"></span>
+        <span class="divider-dot"></span>
+        <span class="divider-dot"></span>
+        <span class="divider-dot"></span>
+      </div>
+
+
+      <h2 class="header-left">HSS ELECTIVES</h2>
+      <h2 class="header-center">COURSE DETAILS</h2>
+      <table class="up">
+        <tr class="row1">
+          <th>COURSE CODE</th>
+          <th>COURSE NAME</th>
+          <th>CREDITS</th>
+          <th>PROFESSOR</th>
+        </tr>
+        <tr>
+          <td>HS202</td>
+          <td>INTRODUCTORY MACROECONOMICS</td>
+          <td>5</td>
+          <td>Nalin Bharati, Meghna Dutta,Rajendra N.P</td>
+        </tr>
+        <tr>
+          <td>HS212</td>
+          <td>DIASPORIC LITERATURE</td>
+          <td>5</td>
+          <td>Priyanka Tripathi</td>
+        </tr>
+        <tr>
+          <td>HS225</td>
+          <td>MEDIA AND LINGUISTICS</td>
+          <td>5</td>
+          <td>Shweta Sinha</td>
+        </tr>
+      </table>
+      <% if (typeof secondTableVisible !== 'undefined' && secondTableVisible) { %>
+      <h2 class="header-center">COURSE MATERIALS</h2>
+      <table class="down">
+        <tr class="row1">
+          <th>SUBJECTS</th>
+          <th>NOTES AND PPTs</th>
+          <th>PYQs</th>
+          <th>BOOKS</th>
+        </tr>
+        <tr>
+          <td>HS202</td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+        </tr>
+        <tr>
+          <td>HS212</td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+        </tr>
+        <tr>
+            <td>HS225</td>
+            <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+            <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+            <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+          </tr>
+      </table>
+      <% } else { %>
+        <div class="container">
+          <div class="box">
+            <p>LOGIN TO GET COURSE MATERIALS</p>
+          </div>
+        </div>
+        <% } %>
+
+
+      <div class="divider">
+        <span class="divider-dot"></span>
+        <span class="divider-dot"></span>
+        <span class="divider-dot"></span>
+        <span class="divider-dot"></span>
+        <span class="divider-dot"></span>
+      </div>
+
+      <h2 class="header-left">OPEN ELECTIVES</h2>
+      <h2 class="header-center">COURSE DETAILS</h2>
+      <table class="up">
+        <tr class="row1">
+          <th>COURSE CODE</th>
+          <th>COURSE NAME</th>
+          <th>CREDITS</th>
+          <th>PROFESSOR</th>
+        </tr>
+        <tr>
+          <td>PH202</td>
+          <td>VACCUM SCIENCE AND TECHNIQUES</td>
+          <td>6</td>
+          <td>P.K Tiwari</td>
+        </tr>
+        <tr>
+          <td>CS244</td>
+          <td>INTRODUCTION TO DATA SCIENCE</td>
+          <td>6</td>
+          <td>Sourav Pandey</td>
+        </tr>
+        <tr>
+          <td>EP</td>
+          <td>OPTICS</td>
+          <td>6</td>
+          <td>Sourav Pandey</td>
+        </tr>
+      </table>
+      <% if (typeof secondTableVisible !== 'undefined' && secondTableVisible) { %>
+      <h2 class="header-center">COURSE MATERIALS</h2>
+      <table class="down">
+        <tr class="row1">
+          <th>SUBJECTS</th>
+          <th>NOTES AND PPTs</th>
+          <th>PYQs</th>
+          <th>BOOKS</th>
+        </tr>
+        <tr>
+          <td>PH203</td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+        </tr>
+        <tr>
+          <td>CS244</td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+          <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+        </tr>
+        <tr>
+            <td>EP</td>
+            <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+            <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+            <td><a href="path_to_file2.doc" class="download-link"><img class="file" src= "/images/file.png" alt="file"></a></td>
+          </tr>
+      </table>
+      <% } else { %>
+        <div class="container">
+          <div class="box">
+            <p>LOGIN TO GET COURSE MATERIALS</p>
+          </div>
+        </div>
+        <% } %>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="JS/header.js"></script>
+</body>
+<div class="semfooter">
+  <%- include("footer") -%>
+ </div>

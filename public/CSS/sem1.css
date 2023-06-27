@@ -1,0 +1,159 @@
+/* CSS for the table-like structure */
+body{
+    background-color: #00041C;
+    color: white;
+    font-family: kodchasan;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Kodchasan;
+    margin-bottom: 0%;
+    /* text-align: center; */
+    
+    
+  }
+  
+  th, td {
+    padding: 8px;
+    /* text-align: center; */
+  }
+   .row1{
+    color: rgb(140, 27, 240);
+    text-align: center;
+    padding: 8px;
+   } 
+  
+  td{
+    text-align: center;
+  }
+  
+  
+  th{
+    color: rgb(140, 27, 240);
+    text-align: center;
+    
+  }
+  
+  .down{
+   text-align: center;
+   margin-left: 0;
+  }
+  
+  /* CSS for the headers */
+  .header-top {
+    text-align: center;
+    font-family: kodchasan;
+    padding-bottom: 4%;
+  }
+  
+  .header-left {
+    text-align: left;
+    font-family: Kodchasan;
+    margin-left: 3%;
+    padding-bottom: 3%;
+  }
+  
+  .header-center {
+    text-align: center;
+    font-family: Kodchasan;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+  .up{
+    margin-bottom: 6%;
+  }
+  
+  /* CSS for the download links */
+  .download-link {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  /* CSS for the file icon */
+  .file {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  .divider {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+  
+  .divider-dot {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd2d2;
+    margin: 0 5px;
+    
+  }
+  .sem1container_header{
+    height: 20%;
+  background-color: #00041C;
+  /* margin: -1%; */
+  padding-bottom: 0%;
+  }
+
+  footer .map {
+    padding-top: 2%;
+    }
+    footer h4 {
+    padding-bottom: 3%;
+    font-weight: bold;
+    }
+    
+    footer p {
+    color: white;
+    font-family: 'Kodchasan';
+    padding-bottom: 2%;
+    
+    }
+
+    button {
+
+      font-family: 'Kodchasan';
+      font-size: 100%;
+      color: white;
+      background-color: #040624;
+      border: none;
+      padding: 0px 0px;
+      height: 0px;
+    }
+    
+    button:hover {
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh;
+    }
+    
+    .box {
+      border: 2px solid aqua;
+      padding: 20px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    
+    .box p {
+      margin: 0;
+    }
+
+   
+
+  
