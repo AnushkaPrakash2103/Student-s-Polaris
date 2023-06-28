@@ -45,21 +45,32 @@ body{
     text-align: center;
     font-family: kodchasan;
     padding-bottom: 4%;
+    font-size: 200%;
+    padding-top: 10%;
   }
-  
+  .header-top:hover{
+    font-weight: bold;
+ }
   .header-left {
     text-align: left;
     font-family: Kodchasan;
     margin-left: 3%;
     padding-bottom: 3%;
+      font-size: 150%;
   }
-  
+   .header-left:hover{
+  font-weight: bold;
+}
   .header-center {
     text-align: center;
     font-family: Kodchasan;
     margin-top: 20px;
     margin-bottom: 70px;
+      font-size: 150%;
   }
+.header-center:hover{
+    font-weight: bold;
+ }
   .up{
     margin-bottom: 6%;
   }
@@ -153,6 +164,12 @@ body{
     .box p {
       margin: 0;
     }
+ .box p:hover{
+      font-weight: bold;
+    }
+   .semfooter{
+     margin: -0.6%;
+   }
 
    
 
