@@ -8,16 +8,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="CSS/header.css"></link>
   <link rel="stylesheet" href="CSS/footer.css"></link>
-  
+  <link rel="stylesheet" href="CSS/popupcard.css"></link>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kodchasan:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="sem3container_header">
     <%- include("header") %>
   </div>
-  <h1 class="header-top">SEMESTER III</h1>
-  <h2 class="header-left">CORE SUBJECTS</h2>
-  <h2 class="header-center">COURSE DETAILS</h2>
+  <div class="header-top">SEMESTER III</div>
+  <div class="header-left">CORE SUBJECTS</div>
+  <div class="header-center">COURSE DETAILS</div>
   <table class="up">
     <tr class="row1">
       <th>COURSE CODE</th>
@@ -29,31 +29,31 @@
       <td>EE200</td>
       <td>SEMICONDUCTOR DEVICES AND CIRCUITS</td>
       <td>3</td>
-      <td>P.K Tiwari</td>
+      <td><span class="professor-name" onclick="showPopupCard('Dr. Pramod Kumar Tiwari')">Dr. Pramod Kumar Tiwari</span></td>
     </tr>
     <tr>
       <td>EE201</td>
       <td>DIGITAL CIRCUITS AND MICROPROCESSORS</td>
       <td>6</td>
-      <td>Sourav Pandey</td>
+      <td><span class="professor-name" onclick="showPopupCard('Dr. Saurabh Kumar Pandey')">Dr. Saurabh Kumar Pandey</span></td>
     </tr>
     <tr>
       <td>EE202</td>
       <td>DIGITAL CIRCUITS LABORATORY</td>
       <td>3</td>
-      <td>Sourav Pandey</td>
+      <td><span class="professor-name" onclick="showPopupCard('Dr. Saurabh Kumar Pandey')">Dr. Saurabh Kumar Pandey</span></td>
     </tr>
     <tr>
       <td>EE221</td>
       <td>SIGNALS AND SYSTEMS</td>
       <td>6</td>
-      <td>Amit Kumar, Mahesh Kohelkar</td>
+      <td><span class="professor-name" onclick="showPopupCard('Dr. Amit Kumar Singh')">Dr. Amit Kumar Singh</span></td>
     </tr>
     <tr>
       <td>MA201</td>
       <td>MATHEMATICS-III</td>
       <td>8</td>
-      <td>XYXYXXY</td>
+      <td><span class="professor-name" onclick="showPopupCard('Dr. Pratibhamoy Das')">Dr. Pratibhamoy Das</span></td>
     </tr>
   </table>
   <% if (typeof secondTableVisible !== 'undefined' && secondTableVisible) { %>
@@ -126,19 +126,19 @@
           <td>HS201</td>
           <td>INTRODUCTORY MICROECONOMICS</td>
           <td>6</td>
-          <td>P.K Tiwari</td>
+          <td><span class="professor-name" onclick="showPopupCard('Prof. Nalin Bharti')">Prof. Nalin Bharti</span></td>
         </tr>
         <tr>
           <td>HS231</td>
           <td>INTRODUCTORY SOCIOLOGY</td>
           <td>6</td>
-          <td>Sourav Pandey</td>
+          <td><span class="professor-name" onclick="showPopupCard('Dr. Aditya Raj')">Dr. Aditya Raj</span></td>
         </tr>
         <tr>
           <td>HS221</td>
           <td>FUNDAMENTALS OF LINGUISTIC SCIENCE</td>
           <td>3</td>
-          <td>Sourav Pandey</td>
+          <td><span class="professor-name" onclick="showPopupCard('Dr. Sweta Sinha')">Dr. Sweta Sinha</span></td>
         </tr>
       </table>
       <% if (typeof secondTableVisible !== 'undefined' && secondTableVisible) { %>
@@ -176,9 +176,28 @@
           </div>
         </div>
         <% } %>
-
+<!-- /*******************************PROF-DETAILS**************************************************// -->
+<div id="popup-card" class="popup-card">
+  <div class="popup-content">
+    <img src="" alt="Card Image">
+    <span class="close-button">&times;</span>
+    <!-- <h2 class="popup-heading">Professor Details</h2> -->
+    <div class="popupcontainer">
+    <p class="popup-text"><p class="popupbold">Name : </p><span id="professor-name"></span></p>
+    <p class="popup-text"><p class="popupbold">Position :</p> <span id="professor-pos"></span></p>
+    <p class="popup-text"><p class="popupbold">Email : </p><span id="professor-email"></span></p>
+    <p class="popup-text"><p class="popupbold">Phone : </p><span id="professor-phone"></span></p>
+    <p class="popup-text"><p class="popupbold">For More Information :</p> <span id="professor-details"> <div class="link">Visit</div></span></p>
+  </div>
+    <!-- Add more professor details here if needed -->
+  </div>
+</div>
+<!-- /***********************************************************************************/ -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
       <script src="JS/header.js"></script>
+  <!-- /*************************************************************************************/ -->
+  <script src="JS/popup.js"></script>
+  <!-- /*********************************************************************************************/ -->
 </body>
 <div class="semfooter">
   <%- include("footer") -%>

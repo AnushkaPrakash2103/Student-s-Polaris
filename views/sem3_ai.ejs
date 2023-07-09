@@ -15,9 +15,9 @@
   <div class="sem4_header">
     <%- include("header") %>
   </div>
-  <h1 class="header-top">SEMESTER IV</h1>
-  <h2 class="header-left">CORE SUBJECTS</h2>
-  <h2 class="header-center">COURSE DETAILS</h2>
+  <div class="header-top">SEMESTER IV</div>
+  <div class="header-left">CORE SUBJECTS</div>
+  <div class="header-center">COURSE DETAILS</div>
   <table class="up">
     <tr class="row1">
       <th>COURSE CODE</th>
@@ -135,22 +135,22 @@
           <th>PROFESSOR</th>
         </tr>
         <tr>
-          <td>HS202</td>
-          <td>INTRODUCTORY MACROECONOMICS</td>
-          <td>5</td>
-          <td>Nalin Bharati, Meghna Dutta,Rajendra N.P</td>
+          <td>HS201</td>
+          <td>INTRODUCTORY MICROECONOMICS</td>
+          <td>6</td>
+          <td><span class="professor-name" onclick="showPopupCard('Prof. Nalin Bharti')">Prof. Nalin Bharti</span></td>
         </tr>
         <tr>
-          <td>HS212</td>
-          <td>DIASPORIC LITERATURE</td>
-          <td>5</td>
-          <td>Priyanka Tripathi</td>
+          <td>HS231</td>
+          <td>INTRODUCTORY SOCIOLOGY</td>
+          <td>6</td>
+          <td><span class="professor-name" onclick="showPopupCard('Dr. Aditya Raj')">Dr. Aditya Raj</span></td>
         </tr>
         <tr>
-          <td>HS225</td>
-          <td>MEDIA AND LINGUISTICS</td>
-          <td>5</td>
-          <td>Shweta Sinha</td>
+          <td>HS221</td>
+          <td>FUNDAMENTALS OF LINGUISTIC SCIENCE</td>
+          <td>3</td>
+          <td><span class="professor-name" onclick="showPopupCard('Dr. Sweta Sinha')">Dr. Sweta Sinha</span></td>
         </tr>
       </table>
       <% if (typeof secondTableVisible !== 'undefined' && secondTableVisible) { %>
@@ -263,6 +263,9 @@
         <% } %>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
       <script src="JS/header.js"></script>
+  <!-- /*************************************************************************************/ -->
+  <script src="JS/popup.js"></script>
+  <!-- /*********************************************************************************************/ -->
 </body>
 <div class="semfooter">
   <%- include("footer") -%>

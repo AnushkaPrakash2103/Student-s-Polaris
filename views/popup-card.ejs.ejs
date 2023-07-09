@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale = 1.0 ">
+    <title>Professors info</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="icon" href="https://i.postimg.cc/br1H7MKF/favicon-2.png"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kodchasan:wght@200&display=swap" rel="stylesheet">
+</head>
+  <style>
+    .popup-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    color: black;
+    border-radius: 4px;
+    padding: 20px;
+    display: none; /* Hide the card by default */
+  }
+  .close-button {
+    position: absolute;
+    top: -5px;
+    right: 10px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #030303;
+  }
+  .popup-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+  }
+
+  .popup-card  h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .popup-card  p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #666;
+  }
+  </style>
+</head>
+<body>
+    <div id="popup-card" class="popup-card">
+        <!-- Content of the pop-up card goes here -->
+        <img src="/images/profImages/Maheshkumar_ee_signals_2.jpg" alt="Card Image">
+        <td><span class="professor-name" onclick="showPopupCard('<%= professorName %>')"><%= professorName %></span></td>
+        <p>Some text describing the card.</p>
+        <button class="close-button">&times;</button>
+      </div>
+      
+      <script>
+        // JavaScript code for pop-up functionality
+        const popupCard = document.getElementById('popup-card');
+        const closeButton = document.querySelector('.close-button');
+      
+        // Function to show the pop-up card
+        function showPopupCard() {
+          popupCard.style.display = 'block';
+        }
+      
+        // Function to close the pop-up card
+        function closePopupCard() {
+          popupCard.style.display = 'none';
+        }
+      
+        // Event listeners
+        closeButton.addEventListener('click', closePopupCard);
+      </script>
+      
+</body>
+</html>

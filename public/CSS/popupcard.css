@@ -1,0 +1,60 @@
+.popup-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    background-color: #040624;
+    border: 1px solid #ccc;
+    color: #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    display: none; /* Hide the card by default */
+  }
+.link {
+    color: rgb(253, 253, 253) !important;
+  }
+  .close-button {
+    position: absolute;
+    top: -5px;
+    right: 10px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ffffff;
+  }
+  .popup-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-items: center;
+    margin: 0 70px 20px;
+    border: solid #ffffff 2px;
+    font-family: Kodchasan;
+  }
+
+  .popup-card  h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: Kodchasan;
+  }
+
+  .popup-card  p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: Kodchasan;
+  }
+  .popupbold{
+    font-weight: bold;
+    display: inline;
+    color: #ccc;
+  }
+  /* .popupcontainer{
+    /* background-color: #ffffff; */
+    /* color: #ccc; */
+  /* } */ 

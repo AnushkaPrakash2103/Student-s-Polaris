@@ -10,10 +10,8 @@ body{
     font-family: Kodchasan;
     margin-bottom: 0%;
     /* text-align: center; */
-    
-    
   }
-  
+
   th, td {
     padding: 8px;
     /* text-align: center; */
@@ -23,7 +21,7 @@ body{
     text-align: center;
     padding: 8px;
    } 
-  
+
   td{
     text-align: center;
   }
@@ -38,32 +36,46 @@ body{
   .down{
    text-align: center;
    margin-left: 0;
+   margin-bottom: 10%; 
+   /* changed by me */
   }
   
   /* CSS for the headers */
   .header-top {
     text-align: center;
     font-family: kodchasan;
+    font-size: 200%;
+    padding-top: 10%;
     padding-bottom: 4%;
+
   }
-  
+
   .header-left {
     text-align: left;
     font-family: Kodchasan;
     margin-left: 3%;
+    font-size: 150%;
     padding-bottom: 3%;
   }
-  
+  .header-top:hover{
+    font-weight: bold;
+ }
+ .header-left:hover{
+  font-weight: bold;
+}
   .header-center {
     text-align: center;
     font-family: Kodchasan;
     margin-top: 20px;
+    font-size: 150%;
     margin-bottom: 70px;
   }
+  .header-center:hover{
+    font-weight: bold;
+ }
   .up{
     margin-bottom: 6%;
   }
-  
   /* CSS for the download links */
   .download-link {
     display: inline-block;
@@ -141,6 +153,7 @@ body{
       justify-content: center;
       align-items: center;
       height: 20vh;
+      padding-bottom: 14%;
     }
     
     .box {
@@ -148,12 +161,17 @@ body{
       padding: 20px;
       text-align: center;
       box-sizing: border-box;
+      border-radius: 15px;
     }
     
     .box p {
       margin: 0;
     }
-
-   
+    .box p:hover{
+      font-weight: bold;
+    }
+   .semfooter{
+     margin: -0.6%;
+   }
 
   

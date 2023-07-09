@@ -9,15 +9,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kodchasan:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="CSS/header.css"></link>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/popupcard.css"></link>
   <link rel="stylesheet" href="CSS/footer.css"></link>
 </head>
 <body>
   <div class="sem4_header">
     <%- include("header") %>
   </div>
-  <h1 class="header-top">SEMESTER IV</h1>
-  <h2 class="header-left">CORE SUBJECTS</h2>
-  <h2 class="header-center">COURSE DETAILS</h2>
+  <div class="header-top">SEMESTER IV</div>
+  <div class="header-left">CORE SUBJECTS</div>
+  <div class="header-center">COURSE DETAILS</div>
   <table class="up">
     <tr class="row1">
       <th>COURSE CODE</th>
@@ -29,36 +30,39 @@
       <td>EE203</td>
       <td>ANALOG INTEGRATED CIRCUITS</td>
       <td>6</td>
-      <td>P.K Tiwari</td>
+      <td><span class="professor-name" onclick="showPopupCard('Dr. Pramod Kumar Tiwari')">Dr. Pramod Kumar Tiwari</span></td>
     </tr>
     <tr>
       <td>EE204</td>
       <td>ANALOG CIRCUTS LABORATORY</td>
       <td>3</td>
-      <td>Amit Kumar</td>
+      <td><span class="professor-name" onclick="showPopupCard('Dr. Amit Kumar Singh')">Dr. Amit Kumar Singh</span></td>
     </tr>
     <tr>
       <td>EE205</td>
       <td>NETWORK ANALYSIS AND SYNTHESIS</td>
       <td>6</td>
-      <td>Somnath Pradhan</td>
+      <td><span class="professor-name" onclick="showPopupCard('Dr. Somanath Pradhan')">Dr. Somanath Pradhan</span></td>
     </tr>
     <tr>
       <td>EE280</td>
       <td>ELECTRICAL MACHINES</td>
       <td>6</td>
-      <td>S.K Parida, S.SivaSubramani</td>
+      <td><span class="professor-name" onclick="showPopupCard('Dr. Sanjoy Kumar Parida')">Dr. Sanjoy Kumar Parida</span></td>
+      <!-- <td>S.K Parida, S.SivaSubramani</td> -->
     </tr>
     <tr>
       <td>EE281</td>
       <td>ELECTRICAL MACHINES LABORATORY</td>
       <td>3</td>
-      <td>S.K Parida, S.SivaSubramani</td>
+      <td><span class="professor-name" onclick="showPopupCard('Dr. Sanjoy Kumar Parida')">Dr. Sanjoy Kumar Parida</span></td>
+      <!-- <td>S.K Parida, S.SivaSubramani</td> -->
     </tr>
     <tr>
       <td>MA225</td>
       <td>PROBABILITY THEORY AND RANDOM PROCESSES</td>
       <td>8</td>
+      <td><span class="professor-name" onclick="showPopupCard('Dr. Amit Kumar Singh')">Dr. Amit Kumar Singh</span></td>
       <td>XYXYXXY</td>
     </tr>
   </table>
@@ -139,18 +143,20 @@
           <td>INTRODUCTORY MACROECONOMICS</td>
           <td>5</td>
           <td>Nalin Bharati, Meghna Dutta,Rajendra N.P</td>
+          <td><span class="professor-name" onclick="showPopupCard('Prof. Nalin Bharti')">Prof. Nalin Bharti</span></td>
         </tr>
         <tr>
           <td>HS212</td>
           <td>DIASPORIC LITERATURE</td>
           <td>5</td>
+          <td><span class="professor-name" onclick="showPopupCard('Dr. Sweta Sinha')">Dr. Sweta Sinha</span></td>
           <td>Priyanka Tripathi</td>
         </tr>
         <tr>
           <td>HS225</td>
           <td>MEDIA AND LINGUISTICS</td>
           <td>5</td>
-          <td>Shweta Sinha</td>
+          <td><span class="professor-name" onclick="showPopupCard('Dr. Sweta Sinha')">Dr. Sweta Sinha</span></td>
         </tr>
       </table>
       <% if (typeof secondTableVisible !== 'undefined' && secondTableVisible) { %>
@@ -211,19 +217,19 @@
           <td>PH202</td>
           <td>VACCUM SCIENCE AND TECHNIQUES</td>
           <td>6</td>
-          <td>P.K Tiwari</td>
+          <td><span class="professor-name" onclick="showPopupCard('Dr. Sweta Sinha')">Dr. Sweta Sinha</span></td>
         </tr>
         <tr>
           <td>CS244</td>
           <td>INTRODUCTION TO DATA SCIENCE</td>
           <td>6</td>
-          <td>Sourav Pandey</td>
+          <td><span class="professor-name" onclick="showPopupCard('Dr. Sweta Sinha')">Dr. Sweta Sinha</span></td>
         </tr>
         <tr>
           <td>EP</td>
           <td>OPTICS</td>
           <td>6</td>
-          <td>Sourav Pandey</td>
+          <td><span class="professor-name" onclick="showPopupCard('Dr. Sweta Sinha')">Dr. Sweta Sinha</span></td>
         </tr>
       </table>
       <% if (typeof secondTableVisible !== 'undefined' && secondTableVisible) { %>
@@ -261,8 +267,27 @@
           </div>
         </div>
         <% } %>
+<!-- /*******************************PROF-DETAILS**************************************************// -->
+<div id="popup-card" class="popup-card">
+  <div class="popup-content">
+    <img src="" alt="Card Image">
+    <span class="close-button">&times;</span>
+    <!-- <h2 class="popup-heading">Professor Details</h2> -->
+    <div class="popupcontainer">
+    <p class="popup-text"><p class="popupbold">Name : </p><span id="professor-name"></span></p>
+    <p class="popup-text"><p class="popupbold">Position :</p> <span id="professor-pos"></span></p>
+    <p class="popup-text"><p class="popupbold">Email : </p><span id="professor-email"></span></p>
+    <p class="popup-text"><p class="popupbold">Phone : </p><span id="professor-phone"></span></p>
+    <p class="popup-text"><p class="popupbold">For More Information :</p> <span id="professor-details"> <div class="link">Visit</div></span></p>
+  </div>
+    <!-- Add more professor details here if needed -->
+  </div>
+</div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
       <script src="JS/header.js"></script>
+  <!-- /*************************************************************************************/ -->
+  <script src="JS/popup.js"></script>
+  <!-- /*********************************************************************************************/ -->
 </body>
 <div class="semfooter">
   <%- include("footer") -%>
