@@ -47,8 +47,13 @@ body{
     font-size: 200%;
     padding-top: 10%;
     padding-bottom: 4%;
+    font-size: 200%;
+    padding-top: 10%;
 
   }
+  .header-top:hover{
+    font-weight: bold;
+ }
 
   .header-left {
     text-align: left;
@@ -56,7 +61,11 @@ body{
     margin-left: 3%;
     font-size: 150%;
     padding-bottom: 3%;
+      font-size: 150%;
   }
+   .header-left:hover{
+  font-weight: bold;
+}
   .header-top:hover{
     font-weight: bold;
  }
@@ -69,6 +78,11 @@ body{
     margin-top: 20px;
     font-size: 150%;
     margin-bottom: 70px;
+      font-size: 150%;
+  }
+.header-center:hover{
+    font-weight: bold;
+ }
   }
   .header-center:hover{
     font-weight: bold;
@@ -167,6 +181,17 @@ body{
     .box p {
       margin: 0;
     }
+ .box p:hover{
+      font-weight: bold;
+    }
+   .semfooter{
+     margin: -0.6%;
+   }
+
+   
+
+  
+
     .box p:hover{
       font-weight: bold;
     }
