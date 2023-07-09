@@ -109,6 +109,11 @@ a button:hover
     font-size: 180%;
 
   }
+  .leftlong{
+    margin-top: 3%; 
+    padding-left: 10%;
+    font-size: 180%;
+  }
   .right:hover{
     font-weight: bold;
   }
@@ -126,18 +131,6 @@ a button:hover
 .right_spark:hover{
     font-weight: bold;
   }
-  /* .f1 p,
-  .f1 a {
-    display: inline-block;
-    /* margin-top: 5%; */
-  /* }
-  .instagram-icon{
-    background: radial-gradient(circle at 27% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
-    border-radius: 24%;
-    width: 22px;
-    height: 22px;
-    margin: 3%;
-  }  */
   .f1 {
     display: flex;
     align-items: center;
@@ -249,72 +242,71 @@ a button:hover
     margin-right: 30px;
 
   }
-  @media (max-width: 768px) {
-    .left_description {
-      margin-left: 10%;
-      text-align: justify;
-      font-size: 100%;
-      white-space: nowrap; /* Prevent text from wrapping */
-  overflow: hidden; /* Hide overflowing text */
-  text-overflow: ellipsis; /* Add ellipsis (...) for truncated text */
-  max-width: 100%; /* Limit the width of the <p> element */
-    }
-    .f2 {
-      flex-direction: column;
-      align-items: flex-end;
-    }
-  
-    .icons {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  
-    .f2 a{
-      margin-left: 0;
-      margin-right: 10px;
-    }
-  
-    .f2 p {
-      margin-right: 0;
-    }
-    .f3 {
-      flex-direction: column;
-      align-items: flex-end;
-    }
-  
-    .f3 a{
-      margin-left: 0;
-      margin-right: 10px;
-    }
-  
-    .f3 p {
-      margin-right: 0;
-    }
-    .f4 {
-      flex-direction: column;
-      align-items: flex-end;
-    }
-  
-    .f4 a{
-      margin-left: 0;
-      margin-right:5px;
-    }
-  
-    .f4 p {
-      margin-right: 0;
-    }
+  @media only screen and (max-width: 768px ) {
+    /* Styles for screens up to 767px width (typically mobile devices) */
+    .club_headline1{
+      width: 100%;
+      height: 100px;
+      text-align: center;
+      font-size:  200%;
+      color: white;
+      margin-bottom: 80px;
+      padding-top: 1%;
+      padding-bottom: 8%;
+   }
+   .right_spark{
+     font-size: 100%;
+   }
+   .left,
+   .right {
+    margin-top: 3%; 
+    padding-left: 10%;
+    font-size: 110%;
 
-    .f2 a{
-      /* margin-right: -680px;  */
-      padding-left: 1000px;
-      margin-top: 22px;
-      position: absolute; 
+  }
+  .leftlong{
+    margin-top: 3%; 
+    padding-left: 10%;
+    font-size: 80%;
+  }
+  .left_description,
+  .right_description {
+    margin: 0 10%;
+    text-align: justify;
+    font-size: 80%;
+  }
+  .icons {
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  .f2 a {
+    margin-left: 1px;
+  }
+  
+  .f2 p {
+    padding-left: 30px;
+    margin: 10px 10px 10px 0;
+  }
+  .f2 .facebook-icon1{
+    margin-right: 30px; 
+    /* margin-top: 22px; */
+  }
+  .f2 .linkedin-icon1{
+    margin-right: 30px;
+  }
+    .headline{
+      padding-bottom: 50%;
     }
-    p {
-      font-size: 14px;
-      padding: 8px;
+    .branchcontainer {
+      flex-direction: column;
+      padding-top: 5%;
     }
-
+    .columnb {
+      width: 100%;
+      padding-left: 90px;
+      padding-right: 100px;
+    }
        footer .map {
           padding-top: 2%;
       }
