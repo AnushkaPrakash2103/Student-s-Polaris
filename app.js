@@ -304,9 +304,7 @@ app.post("/branch", (req, res) => {
         if (branch === "9") {
           res.redirect("/sem8_ep");
         }
-      }} else {
-    res.redirect("/branch");
-  }
+      }} 
 });
 
 //----------------------------
@@ -614,16 +612,7 @@ async function main()
   app.post("/header", async function(req, res)
   {
     const header = req.body.header;
-    if (header === "1") {
-      res.redirect("/");
-    }
-    else if(header==2){
-      res.redirect("/about");
-    }
-    else if(header==3){
-      res.redirect("/login");
-    } 
-    else if(header==4){
+    if(header==4){
       loggedIn=false;
       res.redirect("/");
     }

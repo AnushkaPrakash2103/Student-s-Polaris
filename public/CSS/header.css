@@ -22,11 +22,17 @@
 {
     padding-left: 10px;
     padding-right: 10px;
+    font-family: 'Kodchasan';
     font-size: 128%;
     text-decoration: none;
     color: #FFFFFF;
 }
 .Header .hdrght button:hover
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+.Header .hdrght a:hover
 {
     font-weight: bold;
     cursor: pointer;
