@@ -9,14 +9,15 @@ also inlude css style link for header = CSS/header.css and java script file
     <div class="hdrght" id="myTopnav">
         <form action="/header" method="post">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#home"><button type="submit" name="header" value="1">HOME</button></a>
-            <a href="#about"><button type="submit" name="header" value="2">ABOUT</button></a>
+            <a href="/">HOME</a>
+            <a href="/about">ABOUT</a>
 
             <% if(log==false) {  %>
-                <a href="#about"><button type="submit" name="header" value="3">LOGIN / SIGN UP</button></a>
+                <a href="/login">LOGIN</a>
+                <a href="/signup">SIGN UP</a>
             <% } %>
             <% if(log==true) {  %>
-                <a href="#about"><button type="submit" name="header" value="6">BLOG</button></a>
+                <a href="/year">ACADEMICS</a>
             <% } %>
             <a href="javascript:void(0);" class="icon" onclick="openNav()">
             <i class="fa fa-bars"></i>
